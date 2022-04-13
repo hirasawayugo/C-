@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\bridge test\main.cpp(5,13): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
+  bridge test.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\bridge test\Debug\bridge test.exe
