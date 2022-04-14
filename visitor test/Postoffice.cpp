@@ -11,6 +11,6 @@ Postoffice::~Postoffice()
 
 void Postoffice::accept(Visitor& iVisitor)
 {
-	printf("¡“ú‚Í‚Ç‚Ì‚æ‚¤‚È‚²—pŒ‚Å‚µ‚å‚¤‚©");
+	printf("¡“ú‚Í‚Ç‚Ì‚æ‚¤‚È‚²—pŒ‚Å‚µ‚å‚¤‚©\n");
 	iVisitor.visit(*this);
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include "ShopBase.h"
+#include "Visitor.h"
 
 class Bakery : public ShopBase
 {

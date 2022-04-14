@@ -1,20 +1,3 @@
-﻿  Bakery.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Postoffice.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Visitor.h(11,21): error C2061: 構文エラー: 識別子 'Bakery'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Bakery.cpp(15,24): error C2664: 'void Visitor::visit(Postoffice &)': 引数 1 を 'Bakery' から 'Postoffice &' へ変換できません。
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Visitor.h(12,15): message : 'Visitor::visit' の宣言を確認してください
-  Doctor.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Bakery.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Postoffice.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-  Police.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Bakery.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Postoffice.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-  Postoffice.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Bakery.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Visitor.h(12,21): error C2061: 構文エラー: 識別子 'Postoffice'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Postoffice.cpp(15,22): error C2664: 'void Visitor::visit(Bakery &)': 引数 1 を 'Postoffice' から 'Bakery &' へ変換できません。
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Visitor.h(11,15): message : 'Visitor::visit' の宣言を確認してください
-  Visitor.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Bakery.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Postoffice.h(11,22): error C2061: 構文エラー: 識別子 'Visitor'
-  コードを生成中...
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\visitor test\main.cpp(7,13): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
+  visitor test.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\visitor test\Debug\visitor test.exe

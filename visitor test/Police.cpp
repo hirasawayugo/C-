@@ -9,12 +9,7 @@ Police::~Police()
 {
 }
 
-void Police::visit(Bakery& bakery)
+void Police::visit(ShopBase& bakery)
 {
-	printf("(ŒxŽ@)ƒpƒ“‚ðˆê‚Â‚­‚¾‚³‚¢");
-}
-
-void Police::visit(Postoffice& postoffice)
-{
-	printf("(ŒxŽ@)ŽèŽ†‚ð‚¨Šè‚¢‚µ‚Ü‚·");
+	printf("(ŒxŽ@)‚ª“ü“X‚µ‚Ü‚µ‚½\n");
 }

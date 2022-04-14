@@ -1,5 +1,7 @@
 #pragma once
 #include "ShopBase.h"
+#include "Visitor.h"
+
 
 class Postoffice : public ShopBase
 {
