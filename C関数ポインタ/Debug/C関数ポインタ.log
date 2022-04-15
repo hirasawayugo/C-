@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\C関数ポインタ\main.cpp(13,13): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
+  C関数ポインタ.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\C関数ポインタ\Debug\C関数ポインタ.exe
