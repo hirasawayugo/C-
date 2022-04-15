@@ -7,9 +7,8 @@ namespace C_
     {
         static void Main(string[] args)
         {
-            Answer answer = new Answer();
+            Answer answer = new Answer((new AnswerWords()).hello);
         // 関数をデリゲートに格納
-        answer = (new AnswerWords()).hello;
 
         answer += (new AnswerWords()).bey;
 

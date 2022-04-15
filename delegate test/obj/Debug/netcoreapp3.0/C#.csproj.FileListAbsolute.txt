@@ -9,3 +9,17 @@ C:\Users\hirasawa.yugo\Desktop\C#\obj\Debug\netcoreapp3.0\C#.AssemblyInfoInputs.
 C:\Users\hirasawa.yugo\Desktop\C#\obj\Debug\netcoreapp3.0\C#.AssemblyInfo.cs
 C:\Users\hirasawa.yugo\Desktop\C#\obj\Debug\netcoreapp3.0\C#.dll
 C:\Users\hirasawa.yugo\Desktop\C#\obj\Debug\netcoreapp3.0\C#.pdb
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\bin\Debug\netcoreapp3.0\C#.exe
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\bin\Debug\netcoreapp3.0\C#.deps.json
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\bin\Debug\netcoreapp3.0\C#.runtimeconfig.json
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\bin\Debug\netcoreapp3.0\C#.runtimeconfig.dev.json
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\bin\Debug\netcoreapp3.0\C#.dll
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\bin\Debug\netcoreapp3.0\C#.pdb
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.csproj.AssemblyReference.cache
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.AssemblyInfoInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.AssemblyInfo.cs
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.csproj.CoreCompileInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.dll
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.pdb
+C:\Users\hirasawa.yugo\Desktop\C-\delegate test\obj\Debug\netcoreapp3.0\C#.genruntimeconfig.cache
