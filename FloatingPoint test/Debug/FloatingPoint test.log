@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(11,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(36,16): warning C4477: 'printf' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 '__int64' です
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(36,16): message : 書式文字列に '%lld' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(36,16): message : 書式文字列に '%I64d' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(40,12): warning C4477: 'printf' : 書式文字列 '%X' には、型 'unsigned int' の引数が必要ですが、可変個引数 1 は型 '__int64' です
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(40,12): message : 書式文字列に '%llX' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(40,12): message : 書式文字列に '%I64X' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(41,12): warning C4477: 'printf' : 書式文字列 '%X' には、型 'unsigned int' の引数が必要ですが、可変個引数 1 は型 '__int64' です
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(41,12): message : 書式文字列に '%llX' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(41,12): message : 書式文字列に '%I64X' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(42,12): warning C4477: 'printf' : 書式文字列 '%X' には、型 'unsigned int' の引数が必要ですが、可変個引数 1 は型 '__int64' です
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(42,12): message : 書式文字列に '%llX' を使用することをお勧めします
+C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\main.cpp(42,12): message : 書式文字列に '%I64X' を使用することをお勧めします
+  FloatingPoint test.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\FloatingPoint test\Debug\FloatingPoint test.exe
