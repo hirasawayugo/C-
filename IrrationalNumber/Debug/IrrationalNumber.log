@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\IrrationalNumber\main.cpp(5,10): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\IrrationalNumber\main.cpp(7,10): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+  IrrationalNumber.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\IrrationalNumber\Debug\IrrationalNumber.exe
