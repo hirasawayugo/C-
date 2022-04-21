@@ -1,0 +1,36 @@
+2*2 積
+
+「a, b        「A, B　　　　「aA+bC, aB+bD 
+  c, d」　＊    C, D」　＝　　cA+dC, cB+dD」
+
+3*3 積
+「a, b, c       「A, B, C　　　　「aA+bD+cG, aB+bE+cH, aC+bF+cI 
+  d, e, f 　＊    D, E, F　  ＝　　dA+eD+fG, dB+eE+fH, dC+eF+fI
+  g, h, i」       G, H, I」        gA+hD+iG, gB+hE+iH, gC+hF+iI」
+
+
+4*4 積
+「a, b, c, d       「A, B, C, D　　　　「aA+bE+cI+dN, aB+bF+cJ+dM, aC+bG+cK+dO, aD+bH+cL+dP 
+  e, f, g, h 　＊    E, F, G, H　  ＝　　eA+fE+gI+hN, eB+fF+gJ+hM, eC+fG+gK+hO, eD+fH+gL+hP 
+  i, j, k, l,        I, J, K, L          iA+jE+kI+lN, iB+jF+kJ+lM, iC+jG+kK+lO, iD+jH+kL+lP
+  n, m, o, p」       N, M, O, P」        nA+mE+oI+pN, nB+mF+oJ+pM, nC+mG+oK+pO, nD+mH+oL+pP」
+
+m行n列*n行p列 積
+「α11, α12, α13.....α1n　　　　　「β11, β12.....β1p
+  α21, α22, α23.....α2n            β21, β22.....β2p
+  :      :     :         :　　  ＊　   β31, β32.....β3p
+  :      :     :         :             :      :         :
+  αm1, αm2, αm3.....αmn」          βn1, βn2.....βnp」
+
+				||（m行p列になる）
+
+「α11β11+..α1nβn1, ...α11β1p+..αpnβnp
+　α21β11+..α2nβn2, ...α21β1p+..pnβnp
+  :      :     :                 :
+  αm1β11+..αmnβnm, ...αm1β1p+..αmnβnp
+
+例)
+「a, b, c         「A, B       「aA+bC+cE, dA+eC+fE, gA+hC+iE, jA+kC+lE
+  d, e, f　　＊     C, D 　＝　  aB+bD+cG, dB+eD+fG, gB+hD+iG, jB+kD+lG」 (m(4))行n(2)列)
+  g, h, i           E, G」  
+  j, k, l」
