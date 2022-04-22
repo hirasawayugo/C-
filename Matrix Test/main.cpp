@@ -2,6 +2,7 @@
 #include "Matrix.h"
 
 int main() {
+	Matrix mat;
 	int mn22[2][2] = { {1,2},{3,4} };
 	int np22[2][2] = { {10,20},{30,40} };
 	int mn33[3][3] = { {1,2,3},{4,5,6},{7,8,9} };
@@ -11,21 +12,11 @@ int main() {
 	int mn[3][2] = { {1,2},{3,4},{5,6} };
 	int np[2][4] = { {10,20,30,40},{50,60,70,80} };
 
-	int value22[2][2];
-	int value33[3][3];
-	int value44[4][4];
-	int value[3][4];
+	int **value22 = mat.mult22(mn22, np22);
+	int **value33 = mat.mult33(mn33, np33);
+	int **value44 = mat.mult44(mn44, np44);
+	int **value   = mat.mult(mn, np);
 
-	//2*2
-	for (int i = 0; i < 2; i++) {
-		for (int j = 0; j < 2; j++) {
-			int sum = 0;
-			for (int k = 0; k < 2; k++) {
-				sum += mn22[i][k] * np22[k][j];
-			}
-			value22[i][j] = sum;
-		}
-	}
 	puts("2*2");
 	for (int i = 0; i < 2; i++ ) {
 		for (int j = 0; j < 2; j++ ) {
@@ -51,15 +42,6 @@ int main() {
 		printf("\n");
 	}
 	//4*4
-	for (int i = 0; i < 4; i++) {
-		for (int j = 0; j < 4; j++) {
-			int sum = 0;
-			for (int k = 0; k < 4; k++) {
-				sum += mn44[i][k] * np44[k][j];
-			}
-			value44[i][j] = sum;
-		}
-	}
 	puts("4*4");
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
@@ -68,15 +50,6 @@ int main() {
 		printf("\n");
 	}
 	//mn*np(32*24)
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 4; j++) {
-			int sum = 0;
-			for (int k = 0; k < 2; k++) {
-				sum += mn[i][k] * np[k][j];
-			}
-			value[i][j] = sum;
-		}
-	}
 	puts("mn*np(32*24)");
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 4; j++) {
