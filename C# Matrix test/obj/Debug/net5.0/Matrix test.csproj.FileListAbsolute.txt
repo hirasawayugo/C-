@@ -1,0 +1,32 @@
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.csproj.AssemblyReference.cache
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.AssemblyInfoInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.AssemblyInfo.cs
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.csproj.CoreCompileInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\Matrix test.exe
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\Matrix test.deps.json
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\Matrix test.runtimeconfig.json
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\Matrix test.runtimeconfig.dev.json
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\ref\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\bin\Debug\net5.0\Matrix test.pdb
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\ref\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.pdb
+C:\Users\hirasawa.yugo\Desktop\C#\Matrix test\obj\Debug\net5.0\Matrix test.genruntimeconfig.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\Matrix test.exe
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\Matrix test.deps.json
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\Matrix test.runtimeconfig.json
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\Matrix test.runtimeconfig.dev.json
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\ref\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\bin\Debug\net5.0\Matrix test.pdb
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.csproj.AssemblyReference.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.AssemblyInfoInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.AssemblyInfo.cs
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.csproj.CoreCompileInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\ref\Matrix test.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.pdb
+C:\Users\hirasawa.yugo\Desktop\C#\C# Matrix test\obj\Debug\net5.0\Matrix test.genruntimeconfig.cache
