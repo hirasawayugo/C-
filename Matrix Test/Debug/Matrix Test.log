@@ -1,2 +1,6 @@
 ﻿  main.cpp
+  Matrix.cpp
+  Matrix33.cpp
+  Vector.cpp
+  コードを生成中...
   Matrix Test.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Debug\Matrix Test.exe
