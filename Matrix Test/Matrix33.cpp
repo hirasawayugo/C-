@@ -8,7 +8,7 @@ Matrix33::~Matrix33()
 {
 }
 
-void Matrix33::setValue(float x[3], float y[3], float z[3])
+void Matrix33::setValue(float *x, float *y, float *z)
 {
 	value[0][0] = *x;
 	value[1][0] = *y;

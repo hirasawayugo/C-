@@ -5,7 +5,7 @@ public:
 	Matrix33( );
 	virtual ~Matrix33( );
 public:
-	void setValue( float x[3], float y[3], float z[3] );
+	void setValue( float *x, float *y, float *z );
 	float **getValue()const;
 public:
 	Matrix33 operator*( Matrix33& );
