@@ -1,9 +1,8 @@
 #pragma once
-
-constexpr int SIZE = 3;
-
 class Matrix33
 {
+public:
+	static const int SIZE = 3;
 public:
 	Matrix33( );
 	virtual ~Matrix33( );

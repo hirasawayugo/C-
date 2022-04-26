@@ -25,7 +25,7 @@ Matrix33& Matrix33::operator*( Matrix33& other ) const
 {
 	Matrix33* mult = new Matrix33();
 	float (*oValue)[SIZE] = other.getValue();
-	float multValue[3][3];
+	float multValue[SIZE][SIZE];
 	for (int i = 0; i < SIZE; i++) {
 		for (int j = 0; j < SIZE; j++) {
 			int sum = 0;
