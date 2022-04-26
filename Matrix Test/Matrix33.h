@@ -1,4 +1,7 @@
 #pragma once
+
+constexpr int SIZE = 3;
+
 class Matrix33
 {
 public:
@@ -6,10 +9,10 @@ public:
 	virtual ~Matrix33( );
 public:
 	void setValue( float *x, float *y, float *z );
-	float **getValue()const;
+	float (*getValue() ) [SIZE];
 public:
-	Matrix33& operator*( const Matrix33& other)const;
+	Matrix33& operator*( Matrix33& other)const;
 private:
-	float value[3][3];
+	float value[SIZE][SIZE];
 };
 

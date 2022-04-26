@@ -18,12 +18,24 @@ int main() {
 	float npY[3] = { 40,50,60 };
 	float npZ[3] = { 70,80,90 };
 
-
+	printf("行列mn   %4.1f, %4.1f, %4.1f\n", mnX[0], mnX[1], mnX[2]);
+	printf("         %4.1f, %4.1f, %4.1f\n", mnY[0], mnY[1], mnY[2]);
+	printf("         %4.1f, %4.1f, %4.1f\n", mnZ[0], mnZ[1], mnZ[2]);
+	printf("                 ×　　　　 \n");
+	printf("行列np   %4.1f, %4.1f, %4.1f\n", npX[0], npX[1], npX[2]);
+	printf("         %4.1f, %4.1f, %4.1f\n", npY[0], npY[1], npY[2]);
+	printf("         %4.1f, %4.1f, %4.1f\n", npZ[0], npZ[1], npZ[2]);
+	printf("                 ||　　　　 \n");
 	mn33.setValue( mnX, mnY, mnZ );
 	np33.setValue(npX, npY, npZ);
 
 	Matrix* mn = new Matrix();
 
 	Matrix33 mult33 = mn33 * np33;
+	float (*value)[3] = mult33.getValue();
+
+	printf("        %4.1f,  %4.1f,  %4.1f\n", value[0][0], value[0][1], value[0][2]);
+	printf("        %4.1f,  %4.1f,  %4.1f\n", value[1][0], value[1][1], value[1][2]);
+	printf("       %4.1f, %4.1f, %4.1f\n", value[2][0], value[2][1], value[2][2]);
 
 }

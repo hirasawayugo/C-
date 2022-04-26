@@ -6,7 +6,7 @@ public:
 	Matrix();
 	virtual ~Matrix();
 public:
-	void setValue(float** value, int row);
+	void setValue(float** value);
 	float** getValue()const;
 public:
 	Matrix& operator*(Matrix& other)const;
