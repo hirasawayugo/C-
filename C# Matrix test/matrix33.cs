@@ -80,6 +80,7 @@ class Matrix33
 
     public static Matrix33 Multiply(Matrix33 matrix1, Matrix33 matrix2)
     {
+        Matrix33 result = new Matrix33(0,0,0,0,0,0,0,0,0);
         var m11 = ((matrix1.M11 * matrix2.M11) + (matrix1.M12 * matrix2.M21)) + (matrix1.M13 * matrix2.M31);
         var m12 = ((matrix1.M11 * matrix2.M12) + (matrix1.M12 * matrix2.M22)) + (matrix1.M13 * matrix2.M32);
         var m13 = ((matrix1.M11 * matrix2.M13) + (matrix1.M12 * matrix2.M23)) + (matrix1.M13 * matrix2.M33);
@@ -89,19 +90,19 @@ class Matrix33
         var m31 = ((matrix1.M31 * matrix2.M11) + (matrix1.M32 * matrix2.M21)) + (matrix1.M33 * matrix2.M31);
         var m32 = ((matrix1.M31 * matrix2.M12) + (matrix1.M32 * matrix2.M22)) + (matrix1.M33 * matrix2.M32);
         var m33 = ((matrix1.M31 * matrix2.M13) + (matrix1.M32 * matrix2.M23)) + (matrix1.M33 * matrix2.M33);
-        matrix1.M11 = m11;
-        matrix1.M12 = m12;
-        matrix1.M13 = m13;
-        matrix1.M21 = m21;
-        matrix1.M22 = m22;
-        matrix1.M23 = m23;
-        matrix1.M31 = m31;
-        matrix1.M32 = m32;
-        matrix1.M33 = m33;
-        return matrix1;
+        result.M11 = m11;
+        result.M12 = m12;
+        result.M13 = m13;
+        result.M21 = m21;
+        result.M22 = m22;
+        result.M23 = m23;
+        result.M31 = m31;
+        result.M32 = m32;
+        result.M33 = m33;
+        return result;
     }
 
-    public static void Multiply( ref Matrix33 matrix1, ref Matrix33 matrix2, out Matrix33 result )
+    public static void Multiply( ref Matrix33 matrix1, ref Matrix33 matrix2, ref Matrix33 result )
     {
         var m11 = ((matrix1.M11 * matrix2.M11) + (matrix1.M12 * matrix2.M21)) + (matrix1.M13 * matrix2.M31);
         var m12 = ((matrix1.M11 * matrix2.M12) + (matrix1.M12 * matrix2.M22)) + (matrix1.M13 * matrix2.M32);
