@@ -6,11 +6,12 @@ namespace Matrix_test
     {
         static void Main()
         {
-           Vector2D vec1 = new Vector2D(0,0);
-           Vector2D vec2 = new Vector2D(1,1);
-           Calculator calc = new Calculator();
-           double diff = calc.dist( vec1, vec2 );
-            Console.WriteLine(diff);
+           Vector2D vec1 = new Vector2D(3,4);
+           Vector2D vec2 = new Vector2D(2,6);
+
+            Vector2D addVec = vec1 + vec2;
+
+            Console.WriteLine("X:{0} Y:{1}",addVec.X, addVec.Y);
         }
     }
 }
