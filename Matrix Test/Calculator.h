@@ -7,6 +7,7 @@ public:
 	Calculator();
 	virtual ~Calculator();
 public:
-	double dist( Vector2D vec1, Vector2D vec2 );
+	double dist(Vector2D vec1, Vector2D vec2);
+	double angle( Vector2D vec1, Vector2D vec2 );
 };
 

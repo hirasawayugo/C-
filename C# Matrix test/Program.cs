@@ -6,12 +6,13 @@ namespace Matrix_test
     {
         static void Main()
         {
-           Vector2D vec1 = new Vector2D(3,4);
-           Vector2D vec2 = new Vector2D(2,6);
+           Vector2D vec1 = new Vector2D(0,0);
+           Vector2D vec2 = new Vector2D(1,1);
+           Calculator calc = new Calculator();
 
-            Vector2D addVec = vec1 + vec2;
+            double radian = calc.angle(vec1,vec2);
 
-            Console.WriteLine("X:{0} Y:{1}",addVec.X, addVec.Y);
+            Console.WriteLine("角度:{0}",radian * 180 / 3.14);
         }
     }
 }
