@@ -1,4 +1,5 @@
 #include "Matrix33.h"
+#include <math.h>
 
 Matrix33::Matrix33()
 {
@@ -38,10 +39,20 @@ float(*Matrix33::getValue() )[SIZE]
 {
 	return value;
 }
-//3*3ÇÃçsóÒÇÃä|éZ
-Matrix33& Matrix33::operator*( Matrix33& other ) const
+
+void Matrix33::rotate(double angle)
 {
-	float (*oValue)[SIZE] = other.getValue();
+	//ìÒéüå≥ÇÃÇΩÇﬂZé≤âÒì]å≈íË
+	value[0][0] = cos(angle);
+	value[0][1] = -sin(angle);
+	value[1][0] = sin(angle);
+	value[1][1] = cos(angle);
+
+}
+
+Matrix33& Matrix33::mult(Matrix33& other) const
+{
+	float(*oValue)[SIZE] = other.getValue();
 	float multValue[SIZE][SIZE];
 	for (int i = 0; i < SIZE; i++) {
 		for (int j = 0; j < SIZE; j++) {
@@ -55,4 +66,21 @@ Matrix33& Matrix33::operator*( Matrix33& other ) const
 	Matrix33* mult = new Matrix33();
 	mult->setValue(multValue[0], multValue[1], multValue[2]);
 	return *mult;
+}
+//3*3ÇÃçsóÒÇÃä|éZ
+Matrix33& Matrix33::operator*( Matrix33& other ) const
+{
+	return(mult(other));
+}
+
+void Matrix33::mult( Vector2D& vec)
+{
+	vec.x = vec.x * value[0][0] + vec.y * value[0][1];
+	vec.y = vec.x * value[1][0] + vec.y * value[1][1];
+
+}
+
+void Matrix33::operator*(Vector2D& vec)
+{
+	mult(vec);
 }
