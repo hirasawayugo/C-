@@ -1,2 +1,3 @@
 ﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\main.cpp(11,13): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
   Matrix Test.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Debug\Matrix Test.exe
