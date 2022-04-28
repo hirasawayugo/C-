@@ -1,10 +1,10 @@
 #pragma once
 struct Vector2D
 {
-	float x;
-	float y;
+	double x;
+	double y;
 
-	Vector2D(float sub_x, float sub_y) {
+	Vector2D(double sub_x, double sub_y) {
 		x = sub_x;
 		y = sub_y;
 	}

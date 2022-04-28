@@ -14,7 +14,6 @@ class Matrix33
         M32 = m32;
         M33 = m33; 
     }
-    private static int SIZE = 3;
     [DataMember]
     public float M11;
     [DataMember]
