@@ -10,12 +10,12 @@ struct Vector2D
 		y = sub_y;
 	}
 
-	Vector2D add(Vector2D vec)
+	Vector2D add(Vector2D& vec)
 	{
 		return (Vector2D(x + vec.x, y + vec.y));
 	}
 
-	Vector2D operator+(Vector2D vec) 
+	Vector2D operator+(Vector2D& vec) 
 	{
 		return add(vec);
 	}

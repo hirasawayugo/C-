@@ -17,9 +17,10 @@ public struct Vector2D
 
     public static Vector2D add( Vector2D vec1, Vector2D vec2 )
     {
-        vec1.X += vec2.X;
-        vec1.Y += vec2.Y;
-        return vec1;
+        Vector2D addVec;
+        addVec.X = vec1.X + vec2.X;
+        addVec.Y = vec1.Y + vec2.Y;
+        return addVec;
     }
 
     public static Vector2D operator+( Vector2D vec1, Vector2D vec2 )
