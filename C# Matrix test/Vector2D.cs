@@ -27,14 +27,4 @@ public struct Vector2D
     {
         return add(vec1, vec2);
     }
-
-    public static Vector2D Transform(Vector2D position, Matrix33 matrix)
-    {
-        return new Vector2D((position.X * matrix.M11) + (position.Y * matrix.M21) + matrix.M31, (position.X * matrix.M12) + (position.Y * matrix.M22) + matrix.M32);
-    }
-
-    public static Vector2D operator*(Vector2D position, Matrix33 matrix)
-    {
-        return Transform( position, matrix);
-    }
 }

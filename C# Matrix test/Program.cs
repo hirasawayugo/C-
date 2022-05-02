@@ -15,7 +15,7 @@ namespace Matrix_test
             Matrix33 mat = new Matrix33( 0,0,0,0,0,0,0,0,0 );
             mat = Matrix33.Rotate((float)radian);
 
-            Vector2D vec3 = vec2 * mat;
+            Vector2D vec3 = mat * vec2;
 
             Console.WriteLine("X:{0} Y:{1}",vec3.X, vec3.Y );
         }
