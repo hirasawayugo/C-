@@ -7,12 +7,15 @@ namespace Matrix_test
         static void Main()
         {
            Vector2D vec1 = new Vector2D(1,0);
-           Vector2D vec2 = new Vector2D(1,1);
+           Vector2D vec2 = new Vector2D(0,1);
+           Matrix33 mat = Matrix33.Initialize;
 
-           double innerProduct = Vector2D.Dot( vec1, vec2 );
+            Console.WriteLine("初期座標 X:{0}, Y:{1}",vec1.X,vec1.Y );
 
-            Console.WriteLine("ベクトル({0},{1})とベクトル({2},{3}))",vec1.X,vec1.Y,vec2.X,vec2.Y );
-            Console.WriteLine("内積:{0:F1}", innerProduct );
+           Matrix33.Move( mat, vec2 );
+           Vector2D moveVec = mat * vec1;
+
+            Console.WriteLine("移動座標 X:{0}, Y:{1}", moveVec.X, moveVec.Y );
         }
     }
 }

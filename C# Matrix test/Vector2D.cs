@@ -31,4 +31,9 @@ public struct Vector2D
     {
         return (vec1.X * vec2.X) + (vec1.Y * vec2.Y);
     }
+    //外積
+    public static double Cross( Vector2D vec1, Vector2D vec2 )
+    {
+        return (vec1.X * vec2.Y) - (vec1.Y * vec2.X);
+    }
 }

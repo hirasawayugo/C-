@@ -144,6 +144,13 @@ class Matrix33
         return result;
     }
 
+    public static void Move(Matrix33 mat, Vector2D vec)
+    {
+        
+        mat.M31 = (float)vec.X;
+        mat.M32 = (float)vec.Y;
+    }
+
     public static Vector2D Transform(Matrix33 matrix, Vector2D position)
     {
         return new Vector2D((position.X * matrix.M11) + (position.Y * matrix.M21) + matrix.M31, (position.X * matrix.M12) + (position.Y * matrix.M22) + matrix.M32);

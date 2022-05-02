@@ -7,9 +7,7 @@
 int main() {
 	Vector2D vec1 = Vector2D(1, 0);
 	Vector2D vec2 = Vector2D(0, 1);
-
-	double crossProdct = vec1.Cross(vec2);
-	printf("外積:%0.1f \n", crossProdct);
+	printf("初期座標: X:%0.1f Y:%0.1f\n", vec1.x, vec1.y);
 
 	Matrix33 mat;
 	mat.Move(vec2);
