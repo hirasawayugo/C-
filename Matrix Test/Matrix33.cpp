@@ -54,15 +54,13 @@ float(*Matrix33::GetValue() )[SIZE]
 	return value;
 }
 
-Matrix33 Matrix33::Rotate(double angle)
+void Matrix33::Rotate(double angle)
 {
-	Matrix33* mat = new Matrix33();
 	//“ñŽŸŒ³‚Ì‚½‚ßZŽ²‰ñ“]ŒÅ’è
-	mat->value[0][0] = cos(angle);
-	mat->value[0][1] = -sin(angle);
-	mat->value[1][0] = sin(angle);
-	mat->value[1][1] = cos(angle);
-	return *mat;
+	value[0][0] = cos(angle);
+	value[0][1] = -sin(angle);
+	value[1][0] = sin(angle);
+	value[1][1] = cos(angle);
 }
 
 void Matrix33::Move(const Vector2D& vec)

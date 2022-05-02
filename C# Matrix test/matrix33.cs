@@ -131,17 +131,15 @@ class Matrix33
         return matrix1;
     }
 
-    public static Matrix33 Rotate(float radian)
+    public static void Rotate(Matrix33 mat, float radian)
     {
-        Matrix33 result = Matrix33.Initialize;
         var val1 = MathF.Cos(radian);
         var val2 = MathF.Sin(radian);
         
-        result.M11 = val1;
-        result.M12 = val2;
-        result.M21 = -val2;
-        result.M22 = val1;
-        return result;
+        mat.M11 = val1;
+        mat.M12 = val2;
+        mat.M21 = -val2;
+        mat.M22 = val1;
     }
 
     public static void Move(Matrix33 mat, Vector2D vec)

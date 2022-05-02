@@ -13,4 +13,9 @@ int main() {
 	mat.Move(vec2);
 	Vector2D moveVec = mat * vec1;
 	printf("移動座標: X:%0.1f Y:%0.1f\n", moveVec.x, moveVec.y);
+
+	double radian = 90 * 3.14 / 180;
+	mat.Rotate(radian);
+	Vector2D rotateVec = mat * vec1;
+	printf("回転+移動座標: X:%0.1f Y:%0.1f\n", rotateVec.x, rotateVec.y);
 }

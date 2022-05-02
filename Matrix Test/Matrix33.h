@@ -15,7 +15,7 @@ public:
 	void SetValue(float* x, float* y, float* z);
 	float (*GetValue() ) [SIZE];
 public:
-	Matrix33 Rotate( double angle  );
+	void Rotate( double angle  );
 	void Move( const Vector2D& vec );
 	Matrix33& Multiply( Matrix33& other)const;
 	Matrix33& operator*( Matrix33& other)const;
