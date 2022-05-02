@@ -10,7 +10,7 @@ int main() {
 	Calculator calc = Calculator();
 	Matrix33 mat;
 	printf("初期座標 X:%0.2f, Y:%0.2f\n",vec.x, vec.y);
-	printf("初期角度:%0.1f\n ",calc.angle(origin, vec) *180 / 3.14);
+	printf("初期角度:%0.1f\n",calc.angle(origin, vec) *180 / 3.14);
 
 	float angle = 90;
 	//度数をラジアンに変換
@@ -18,7 +18,7 @@ int main() {
 	//ベクトル１あたりの回転値を求める
 	mat.rotate(angle);
 	//座標（ベクトル）を掛けて回転させる
-	mat * vec;
+	vec * mat;
 
 	printf("座標 X:%0.2f, Y:%0.2f\n", vec.x, vec.y);
 	printf("角度:%0.1f \n", calc.angle(origin, vec) * 180 / 3.14);

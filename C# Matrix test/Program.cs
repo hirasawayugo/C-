@@ -10,9 +10,14 @@ namespace Matrix_test
            Vector2D vec2 = new Vector2D(1,1);
            Calculator calc = new Calculator();
 
-            double radian = calc.angle(vec1,vec2);
+            double radian = 90 * 3.14 / 180;
 
-            Console.WriteLine("角度:{0}",radian * 180 / 3.14);
+            Matrix33 mat = new Matrix33( 0,0,0,0,0,0,0,0,0 );
+            mat = Matrix33.Rotate((float)radian);
+
+            Vector2D vec3 = vec2 * mat;
+
+            Console.WriteLine("X:{0} Y:{1}",vec3.X, vec3.Y );
         }
     }
 }

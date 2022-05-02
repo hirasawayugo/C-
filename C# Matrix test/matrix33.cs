@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 [DataContract]
-class Matrix33
+public class Matrix33
 {
     public Matrix33( float m11, float m12, float m13, float m21, float m22, float m23, float m31, float m32, float m33 ){
         M11 = m11;
@@ -139,5 +139,18 @@ class Matrix33
         matrix1.M33 *= scaleFactor;
         return matrix1;
     }
+
+    public static Matrix33 Rotate(float radian)
+        {
+            Matrix33 result = new Matrix33(0,0,0,0,0,0,0,0,0);
+            var val1 = MathF.Cos(radian);
+			var val2 = MathF.Sin(radian);
+			
+            result.M11 = val1;
+            result.M12 = val2;
+            result.M21 = -val2;
+            result.M22 = val1;
+            return result;
+        }
 
 }

@@ -72,16 +72,3 @@ Matrix33& Matrix33::operator*( Matrix33& other ) const
 {
 	return(mult(other));
 }
-
-void Matrix33::mult( Vector2D& vec)
-{
-	Vector2D multVec = vec;
-	vec.x = multVec.x * value[0][0] + multVec.y * value[0][1];
-	vec.y = multVec.x * value[1][0] + multVec.y * value[1][1];
-
-}
-
-void Matrix33::operator*(Vector2D& vec)
-{
-	mult(vec);
-}

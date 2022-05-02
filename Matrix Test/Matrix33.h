@@ -16,9 +16,7 @@ public:
 	void rotate( double angle  );
 	Matrix33& mult( Matrix33& other)const;
 	Matrix33& operator*( Matrix33& other)const;
-	void mult(Vector2D& vec);
-	void operator*(Vector2D& vec);
-private:
+public:
 	float value[SIZE][SIZE];
 };
 

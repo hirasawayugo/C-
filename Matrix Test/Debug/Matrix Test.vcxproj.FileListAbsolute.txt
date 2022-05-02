@@ -1,2 +1,1 @@
 C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Debug\Matrix Test.exe
-C:\Users\hirasawa.yugo\Desktop\C-\Matrix Test\Debug\Matrix Test.exe
