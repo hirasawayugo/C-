@@ -65,6 +65,12 @@ Matrix33 Matrix33::Rotate(double angle)
 	return *mat;
 }
 
+void Matrix33::Move(const Vector2D& vec)
+{
+	value[0][2] += vec.x;
+	value[1][2] += vec.y;
+}
+
 Matrix33& Matrix33::Multiply(Matrix33& other) const
 {
 	float(*oValue)[SIZE] = other.GetValue();

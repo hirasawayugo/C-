@@ -25,5 +25,10 @@ struct Vector2D
 	{
 		return (x * vec.x) + (y * vec.y);
 	}
+	//ŠOÏ
+	double Cross(const Vector2D& vec)
+	{
+		return (x * vec.y) - (y * vec.x);
+	}
 };
 
