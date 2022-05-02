@@ -86,30 +86,14 @@ class Matrix33
 
     public static Matrix33 Multiply(Matrix33 matrix1, Matrix33 matrix2)
     {
-        Matrix33 result = Matrix33.Initialize;
-        var m11 = ((matrix1.M11 * matrix2.M11) + (matrix1.M12 * matrix2.M21)) + (matrix1.M13 * matrix2.M31);
-        var m12 = ((matrix1.M11 * matrix2.M12) + (matrix1.M12 * matrix2.M22)) + (matrix1.M13 * matrix2.M32);
-        var m13 = ((matrix1.M11 * matrix2.M13) + (matrix1.M12 * matrix2.M23)) + (matrix1.M13 * matrix2.M33);
-        var m21 = ((matrix1.M21 * matrix2.M11) + (matrix1.M22 * matrix2.M21)) + (matrix1.M23 * matrix2.M31);
-        var m22 = ((matrix1.M21 * matrix2.M12) + (matrix1.M22 * matrix2.M22)) + (matrix1.M23 * matrix2.M32);
-        var m23 = ((matrix1.M21 * matrix2.M13) + (matrix1.M22 * matrix2.M23)) + (matrix1.M23 * matrix2.M33);
-        var m31 = ((matrix1.M31 * matrix2.M11) + (matrix1.M32 * matrix2.M21)) + (matrix1.M33 * matrix2.M31);
-        var m32 = ((matrix1.M31 * matrix2.M12) + (matrix1.M32 * matrix2.M22)) + (matrix1.M33 * matrix2.M32);
-        var m33 = ((matrix1.M31 * matrix2.M13) + (matrix1.M32 * matrix2.M23)) + (matrix1.M33 * matrix2.M33);
-        result.M11 = m11;
-        result.M12 = m12;
-        result.M13 = m13;
-        result.M21 = m21;
-        result.M22 = m22;
-        result.M23 = m23;
-        result.M31 = m31;
-        result.M32 = m32;
-        result.M33 = m33;
+        Matrix33 result;
+        Multiply(ref matrix1, ref matrix2, out result );
         return result;
     }
 
-    public static void Multiply( ref Matrix33 matrix1, ref Matrix33 matrix2, ref Matrix33 result )
+    public static void Multiply( ref Matrix33 matrix1, ref Matrix33 matrix2, out Matrix33 result )
     {
+        result = Matrix33.Initialize;
         var m11 = ((matrix1.M11 * matrix2.M11) + (matrix1.M12 * matrix2.M21)) + (matrix1.M13 * matrix2.M31);
         var m12 = ((matrix1.M11 * matrix2.M12) + (matrix1.M12 * matrix2.M22)) + (matrix1.M13 * matrix2.M32);
         var m13 = ((matrix1.M11 * matrix2.M13) + (matrix1.M12 * matrix2.M23)) + (matrix1.M13 * matrix2.M33);

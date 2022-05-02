@@ -6,16 +6,13 @@ namespace Matrix_test
     {
         static void Main()
         {
-           Vector2D vec = new Vector2D(1,1);
+           Vector2D vec1 = new Vector2D(1,0);
+           Vector2D vec2 = new Vector2D(1,1);
 
-            double radian = 90 * 3.14 / 180;
+           double innerProduct = Vector2D.Dot( vec1, vec2 );
 
-            Matrix33 mat = Matrix33.Initialize;
-            mat = Matrix33.Rotate((float)radian);
-
-            Vector2D rotateVec = mat * vec;
-
-            Console.WriteLine("X:{0} Y:{1}",rotateVec.X, rotateVec.Y );
+            Console.WriteLine("ベクトル({0},{1})とベクトル({2},{3}))",vec1.X,vec1.Y,vec2.X,vec2.Y );
+            Console.WriteLine("内積:{0:F1}", innerProduct );
         }
     }
 }

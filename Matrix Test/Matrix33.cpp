@@ -3,15 +3,7 @@
 
 Matrix33::Matrix33()
 {
-	value[0][0] = 1;
-	value[0][1] = 0;
-	value[0][2] = 0;
-	value[1][0] = 0;
-	value[1][1] = 1;
-	value[1][2] = 0;
-	value[2][0] = 0;
-	value[2][1] = 0;
-	value[2][2] = 1;
+	Initialize();
 }
 
 Matrix33::Matrix33(float v00, float v01, float v02, float v10, float v11, float v12, float v20, float v21, float v22)
@@ -29,11 +21,7 @@ Matrix33::Matrix33(float v00, float v01, float v02, float v10, float v11, float 
 
 Matrix33::Matrix33(float* x, float* y, float* z)
 {
-	for (int i = 0; i < SIZE; i++) {
-		value[0][i] = x[i];
-		value[1][i] = y[i];
-		value[2][i] = z[i];
-	}
+	SetValue(x, y, z);
 }
 
 Matrix33::~Matrix33()
