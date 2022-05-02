@@ -16,7 +16,7 @@ int main() {
 	//度数をラジアンに変換
 	angle *= 3.14 / 180;
 	//ベクトル１あたりの回転値を求める
-	mat.rotate(angle);
+	mat = mat.Rotate(angle);
 	//座標（ベクトル）を掛けて回転させる
 	vec * mat;
 

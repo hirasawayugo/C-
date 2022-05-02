@@ -1,4 +1,6 @@
 #pragma once
+#include"Matrix33.h"
+
 struct Vector2D
 {
 	double x;
@@ -10,26 +12,27 @@ struct Vector2D
 		y = sub_y;
 	}
 
-	Vector2D add(Vector2D& vec)
+	void add(Vector2D& vec)
 	{
-		return (Vector2D(x + vec.x, y + vec.y));
+		x += vec.x;
+		y += vec.y;
 	}
 
-	Vector2D operator+(Vector2D& vec) 
+	void operator+(Vector2D& vec) 
 	{
-		return add(vec);
+		add(vec);
 	}
 
-	void transform(const Matrix33& mat ) 
+	void transform( const Matrix33& matrix ) 
 	{
 		Vector2D multVec(x, y);
-		x = multVec.x * mat.value[0][0] + multVec.y * mat.value[0][1];
-		y = multVec.x * mat.value[1][0] + multVec.y * mat.value[1][1];
+		x = multVec.x * matrix.value[0][0] + multVec.y * matrix.value[0][1] + matrix.value[0][2];
+		y = multVec.x * matrix.value[1][0] + multVec.y * matrix.value[1][1] + matrix.value[1][2];
 	}
 
-	void operator*( const Matrix33& mat)
+	void operator*( const Matrix33& matrix )
 	{
-		transform(mat);
+		transform(matrix);
 	}
 };
 
