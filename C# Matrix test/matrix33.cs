@@ -77,9 +77,16 @@ class Matrix33
         }
     }
 
+    private static Matrix33 mat = new Matrix33(1,0,0, 0,1,0, 0,0,1);
+
+    public static Matrix33 Initialize
+    {
+        get { return mat; }
+    } 
+
     public static Matrix33 Multiply(Matrix33 matrix1, Matrix33 matrix2)
     {
-        Matrix33 result = new Matrix33(0,0,0,0,0,0,0,0,0);
+        Matrix33 result = Matrix33.Initialize;
         var m11 = ((matrix1.M11 * matrix2.M11) + (matrix1.M12 * matrix2.M21)) + (matrix1.M13 * matrix2.M31);
         var m12 = ((matrix1.M11 * matrix2.M12) + (matrix1.M12 * matrix2.M22)) + (matrix1.M13 * matrix2.M32);
         var m13 = ((matrix1.M11 * matrix2.M13) + (matrix1.M12 * matrix2.M23)) + (matrix1.M13 * matrix2.M33);
@@ -142,7 +149,7 @@ class Matrix33
 
     public static Matrix33 Rotate(float radian)
     {
-        Matrix33 result = new Matrix33(0,0,0,0,0,0,0,0,0);
+        Matrix33 result = Matrix33.Initialize;
         var val1 = MathF.Cos(radian);
         var val2 = MathF.Sin(radian);
         

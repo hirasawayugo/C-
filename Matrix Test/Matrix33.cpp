@@ -40,6 +40,19 @@ Matrix33::~Matrix33()
 {
 }
 
+void Matrix33::Initialize()
+{
+	value[0][0] = 1;
+	value[0][1] = 0;
+	value[0][2] = 0;
+	value[1][0] = 0;
+	value[1][1] = 1;
+	value[1][2] = 0;
+	value[2][0] = 0;
+	value[2][1] = 0;
+	value[2][2] = 1;
+}
+
 void Matrix33::SetValue(float* x, float* y, float* z)
 {
 	for (int i = 0; i < SIZE; i++) {
@@ -85,4 +98,17 @@ Matrix33& Matrix33::Multiply(Matrix33& other) const
 Matrix33& Matrix33::operator*( Matrix33& other ) const
 {
 	return(Multiply(other));
+}
+
+Vector2D& Matrix33::Transform(const Vector2D& vec)const
+{
+	Vector2D multVec(0,0);
+	multVec.x = vec.x * value[0][0] + vec.y * value[0][1] + value[0][2];
+	multVec.y = vec.x * value[1][0] + vec.y * value[1][1] + value[1][2];
+	return multVec;
+}
+
+Vector2D& Matrix33::operator*(const Vector2D& vec)const
+{
+	return Transform(vec);
 }

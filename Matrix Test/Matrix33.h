@@ -1,5 +1,5 @@
 #pragma once
-struct Vector2D;
+#include "Vector2D.h"
 
 class Matrix33
 {
@@ -11,12 +11,15 @@ public:
 	Matrix33(float* x, float* y, float* z);
 	virtual ~Matrix33( );
 public:
+	void Initialize();
 	void SetValue(float* x, float* y, float* z);
 	float (*GetValue() ) [SIZE];
 public:
 	Matrix33 Rotate( double angle  );
 	Matrix33& Multiply( Matrix33& other)const;
 	Matrix33& operator*( Matrix33& other)const;
+	Vector2D& Transform(const Vector2D& vec) const;
+	Vector2D& operator*(const Vector2D& vec) const;
 public:
 	float value[SIZE][SIZE];
 };

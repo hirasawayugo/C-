@@ -1,6 +1,7 @@
 ﻿  Matrix33.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(60,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(61,21): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(62,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(63,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(73,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(74,21): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(75,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(76,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Matrix33.cpp(108): warning C4172: ローカル変数またはテンポラリのアドレスを返します: multVec
   Matrix Test.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Matrix Test\Debug\Matrix Test.exe
