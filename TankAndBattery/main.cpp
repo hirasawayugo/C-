@@ -16,17 +16,18 @@ void main() {
 	{
 		now = clock() / 1000;
 		//íÔ‚ÌŠp“x‚ğ‚T•bŒã‚É‚P“x‚¸‚ç‚·
-		if ( 5 < (now - tankTime)) {
+		if ( 5 <= (now - tankTime)) {
 			double radian = 1 * 3.14 / 180;
 			tank->Rotate(radian);
 			tankTime = now;
 		}
 		//–C‘ä‚ÌŠp“x‚ğ1•bŒã‚É45“x‚¸‚ç‚·
-		if (1 < (now - batTime)) {
+		if (1 <= (now - batTime)) {
 			double radian = -45 * 3.14 / 180;
+			tank->BatRotate(radian);
 			batTime = now;
 		}
-		if (30 < (now - logTime)) {
+		if (30 <= (now - logTime)) {
 			tank->debuglog();
 			logTime = now;
 		}
