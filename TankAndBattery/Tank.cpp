@@ -32,10 +32,10 @@ void Tank::SetPos( const Matrix33& mat)
 void Tank::Rotate(const double& radian)
 {
 	Matrix33 mat;
-	mat.Rotate(radian);
+	angle += radian;
+	mat.Rotate(angle);
 	SetSideRoate(mat);
 	battery.Rotate(radian);
-	angle += radian;
 }
 
 void Tank::BatRotate(const double& radian)

@@ -31,7 +31,8 @@ void Battery::UpdatePos( const Vector2D& tPos )
 void Battery::Rotate( const double& radian )
 {
 	Matrix33 mat;
-	mat.Rotate(radian);
+	angle += radian;
+	mat.Rotate(angle);
 
 	Vector2D fl(LEFT, FRONT);
 	Vector2D fr(RIGHT, FRONT);
@@ -52,8 +53,6 @@ void Battery::Rotate( const double& radian )
 	frontRight = fr;
 	backLeft = bl;
 	backRight = br;
-	
-	angle += radian;
 }
 
 void Battery::debuglog()
