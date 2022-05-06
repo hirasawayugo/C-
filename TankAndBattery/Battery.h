@@ -19,13 +19,13 @@ private:
 	Vector2D frontRight;
 	Vector2D backLeft;
 	Vector2D backRight;
-	double width;
-	double length;
 	double angle;
 private:
-	const double RIGHT = width / 2;
-	const double LEFT = -width / 2;
-	const double FRONT = length;
+	const double WIDTH = 0.5;
+	const double LENGHT = 1.0;
+	const double RIGHT = WIDTH / 2;
+	const double LEFT = -WIDTH / 2;
+	const double FRONT = LENGHT;
 	const double BACK = 0;
 };
 

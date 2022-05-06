@@ -26,14 +26,15 @@ private:
 	Vector2D frontRight;
 	Vector2D backLeft;
 	Vector2D backRight;
-	double width;
-	double length;
+	
 	double angle;
 	Battery battery;
 private:
-	const double RIGHT = width / 2;
-	const double LEFT = -width / 2;
-	const double FRONT = length / 2;
-	const double BACK = -length / 2;
+	const double WIDTH = 2.0;
+	const double LENGHT = 3.0;
+	const double RIGHT = WIDTH / 2;
+	const double LEFT = -WIDTH / 2;
+	const double FRONT = LENGHT / 2;
+	const double BACK = -LENGHT / 2;
 };
 

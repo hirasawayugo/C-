@@ -6,8 +6,6 @@
 Tank::Tank()
 {
 	angle = 0.0;
-	width = 2.0;
-	length = 3.0;
 	SetSidePos();
 	battery.UpdatePos(pos);
 }
