@@ -1,0 +1,16 @@
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.csproj.AssemblyReference.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.AssemblyInfoInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.AssemblyInfo.cs
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.csproj.CoreCompileInputs.cache
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\C# TankAndBattery.exe
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\C# TankAndBattery.deps.json
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\C# TankAndBattery.runtimeconfig.json
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\C# TankAndBattery.runtimeconfig.dev.json
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\C# TankAndBattery.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\ref\C# TankAndBattery.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\bin\Debug\net5.0\C# TankAndBattery.pdb
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\ref\C# TankAndBattery.dll
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.pdb
+C:\Users\hirasawa.yugo\Desktop\C#\C# TankAndBattery\obj\Debug\net5.0\C# TankAndBattery.genruntimeconfig.cache

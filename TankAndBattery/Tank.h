@@ -10,16 +10,13 @@ public:
 	virtual ~Tank();
 public:
 	void SetPos( const Vector2D& sPos );
-	void SetPos( const Matrix33& mat );
 	void Rotate(const double& radian);
 	void BatRotate(const double& radian);
 	Vector2D GetPos() const;
-	double GetAngle() const;
 
 	void debuglog();
 private:
 	void SetSidePos();
-	void SetSideRoate( Matrix33& mat);
 private:
 	Vector2D pos;
 	Vector2D frontLeft;
