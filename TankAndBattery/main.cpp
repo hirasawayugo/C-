@@ -23,7 +23,7 @@ void main() {
 		}
 		//–C‘ä‚ÌŠp“x‚ð1•bŒã‚É45“x‚¸‚ç‚·
 		if (1 < (now - batTime)) {
-			double radian = 45 * 3.14 / 180;
+			double radian = -45 * 3.14 / 180;
 			batTime = now;
 		}
 		if (30 < (now - logTime)) {
