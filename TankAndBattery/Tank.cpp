@@ -21,6 +21,16 @@ void Tank::SetPos( const Vector2D& sPos)
 	battery.UpdatePos(pos);
 }
 
+void Tank::Advance(const double power)
+{
+	Vector2D vec( 0, power );
+	Matrix33 mat;
+	mat.Rotate(angle);
+	mat.Move(vec);
+	SetPos(mat * pos);
+	battery.UpdatePos(pos);
+}
+
 void Tank::Rotate(const double& radian)
 {
 	angle += radian;

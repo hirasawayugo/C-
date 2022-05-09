@@ -9,13 +9,14 @@ public:
 	Tank();
 	virtual ~Tank();
 public:
-	void SetPos( const Vector2D& sPos );
+	void Advance( const double power );
 	void Rotate(const double& radian);
 	void BatRotate(const double& radian);
 	Vector2D GetPos() const;
 
 	void debuglog();
 private:
+	void SetPos(const Vector2D& sPos);
 	void SetSidePos();
 private:
 	Vector2D pos;

@@ -37,6 +37,17 @@ class Tank
         BatRotate(radian);
     }
 
+    public void Advance(double power )
+    {
+        Vector2D vec = new Vector2D(0, power);
+        Matrix33 mat = Matrix33.Initialize;
+        
+        Matrix33.Rotate(mat, (float)angle);
+        Matrix33.Move(mat, vec);
+        pos = mat * pos;
+        bat.UpdatePos(pos);
+    } 
+
     public void BatRotate(double radian)
     {
         bat.Rotate(radian);
