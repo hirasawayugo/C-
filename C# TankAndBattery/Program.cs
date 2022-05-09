@@ -7,11 +7,15 @@ namespace C__TankAndBattery
         static void Main()
         {
             var sw = new System.Diagnostics.Stopwatch();
-            Tank tank = new Tank();
-            Calculator calu = new Calculator();
             long tAngleTime, tAdvTime, bAngleTime, logTime;
             tAngleTime = tAdvTime = bAngleTime = logTime = sw.ElapsedTicks;
+            Calculator calu = new Calculator();
+
+            Tank tank = new Tank(2, 3);
+            Battery bat = new Battery(0.5, 1);
+            tank.AddBattery(bat);
             tank.Debuglog();
+            bat.Debuglog();
             sw.Start();
             while(true){
                 sw.Stop();
@@ -23,16 +27,17 @@ namespace C__TankAndBattery
                 }
                 //砲台の角度を1秒後に45度反時計回り
                 if (1 <= (now - bAngleTime)) {
-                    tank.BatRotate(calu.Radians(-45));
+                    bat.Rotate(calu.Radians(-45));
                     bAngleTime = now;
                 }
                 //戦車を１０秒後に1単位前進
                 if (10 <= (now - tAdvTime)) {
-                    tank.Advance(1);
+                    tank.Forward(1);
                     tAdvTime = now;
                 }
                 if (30 <= (now - logTime)) {
                     tank.Debuglog();
+                    bat.Debuglog();
                     logTime = now;
                 }
                 sw.Start();

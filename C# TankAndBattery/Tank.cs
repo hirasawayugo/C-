@@ -2,21 +2,31 @@ using  System;
 class Tank
 {
     private Vector2D pos;
-    private Vector2D frontLeft;
-    private Vector2D frontRight;
-    private Vector2D backLeft;
-    private Vector2D backRight;
+    private Vector2D[] point = new Vector2D[4];
     private double angle;
-    private Battery bat = new Battery();
+    private Battery battery;
 
-    const double WIDTH = 2.0;
-	const double LENGHT = 3.0;
-	const double RIGHT = WIDTH / 2;
-	const double LEFT = -WIDTH / 2;
-	const double FRONT = LENGHT / 2;
-	const double BACK = -LENGHT / 2;
-    public Tank(){
+    double WIDTH;
+	double LENGHT;
+	double RIGHT;
+	double LEFT;
+	double FRONT;
+	double BACK;
+    public Tank(double width, double lenght)
+    {
+        WIDTH = width;
+        LENGHT = lenght;
+        RIGHT = WIDTH / 2;
+        LEFT = -WIDTH / 2;
+        FRONT = LENGHT / 2;
+        BACK = -LENGHT / 2;
         SetSidePos();
+    }
+
+    public void AddBattery( Battery bat )
+    {
+        battery = bat;
+        battery.UpdatePos(pos);
     }
     public Vector2D Pos
     {
@@ -34,10 +44,10 @@ class Tank
     {
         angle += radian;
         SetSidePos();
-        BatRotate(radian);
+        battery.Rotate(radian);
     }
 
-    public void Advance(double power )
+    public void Forward(double power)
     {
         Vector2D vec = new Vector2D(0, power);
         Matrix33 mat = Matrix33.Initialize;
@@ -45,40 +55,34 @@ class Tank
         Matrix33.Rotate(mat, (float)angle);
         Matrix33.Move(mat, vec);
         pos = mat * pos;
-        bat.UpdatePos(pos);
+        battery.UpdatePos(pos);
     } 
-
-    public void BatRotate(double radian)
-    {
-        bat.Rotate(radian);
-    }
 
      private void SetSidePos( )
     {
-        frontLeft = new Vector2D(LEFT, FRONT);
-        frontRight = new Vector2D(RIGHT, FRONT);
-        backLeft = new Vector2D(LEFT, BACK);
-        backRight = new Vector2D(RIGHT, BACK);
+        point[0] = new Vector2D(LEFT, FRONT);
+        point[1] = new Vector2D(RIGHT, FRONT);
+        point[2] = new Vector2D(RIGHT, BACK);
+        point[3] = new Vector2D(LEFT, BACK);
         Matrix33 mat = Matrix33.Initialize;
         Matrix33.Rotate(mat,(float)angle);
 
-        frontLeft = mat * frontLeft;
-        frontRight = mat * frontRight;
-        backLeft = mat * backLeft;
-        backRight = mat * backRight;
+        point[0] = mat * point[0];
+        point[1] = mat * point[1];
+        point[2] = mat * point[2];
+        point[3] = mat * point[3];
 
-        Vector2D.Add(frontLeft,pos);
-        Vector2D.Add(frontRight,pos);
-        Vector2D.Add(backLeft,pos);
-        Vector2D.Add(backRight,pos);
+        Vector2D.Add(point[0],pos);
+        Vector2D.Add(point[1],pos);
+        Vector2D.Add(point[2],pos);
+        Vector2D.Add(point[3],pos);
     }
 
     public void Debuglog()
     {
         double tAngle = angle * 180 / 3.14;
-        Console.WriteLine("戦車 位置 X:{0} Y:{1} 角度:{2}\n", pos.X, pos.Y, tAngle);
-        Console.WriteLine("　　 前左 X:{0} Y:{1} \n　　 前右 X:{2} Y:{3}\n", frontLeft.X, frontLeft.Y,frontRight.X, frontRight.Y);
-        Console.WriteLine("　　 後左 X:{0} Y:{1} \n　　 後ろ右 X:{2} Y:{3}\n", backLeft.X, backLeft.Y, backRight.X, backRight.Y);
-        bat.Debuglog();
+        Console.WriteLine("戦車 位置 X:{0} Y:{1} 角度:{2}", pos.X, pos.Y, tAngle);
+        Console.WriteLine("　　 前左 X:{0} Y:{1} \n　　 前右 X:{2} Y:{3}", point[0].X, point[0].Y,point[1].X, point[1].Y);
+        Console.WriteLine("　　 後左 X:{0} Y:{1} \n　　 後ろ右 X:{2} Y:{3}", point[3].X, point[3].Y, point[2].X, point[2].Y);
     }
 }

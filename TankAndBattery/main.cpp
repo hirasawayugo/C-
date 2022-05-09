@@ -1,17 +1,22 @@
 
 #include <time.h>
 #include "Tank.h"
+#include "Battery.h"
 #include "Matrix33.h"
 #include "Vector2D.h"
 #include "Calculator.h"
 
 void main() {
-	Tank* tank = new Tank();
 	Calculator calc;
+	Tank* tank = new Tank(2, 3);
+	Battery* battery = new Battery(0.5, 1);
+	tank->AddBattery(battery);
+
 	int now = clock() / 1000;
 	int tAngleTime, tAdvTime, bAngleTime, logTime;
 	tAngleTime = tAdvTime = bAngleTime = logTime = now;
 	tank->debuglog();
+	battery->debuglog();
 	
 	while (true)
 	{
@@ -23,16 +28,17 @@ void main() {
 		}
 		//–C‘ä‚ÌŠp“x‚ğ1•bŒã‚É45“x‰ñ“]
 		if (1 <= (now - bAngleTime)) {
-			tank->BatRotate(calc.Radians(-45));
+			battery->Rotate(calc.Radians(-45));
 			bAngleTime = now;
 		}
 		//íÔ‚ÌŠp“x‚ğ10•bŒã‚É‚P’PˆÊ‘Oi
 		if (10 <= (now - tAdvTime)) {
-			tank->Advance(1);
+			tank->Forward(1);
 			tAdvTime = now;
 		}
 		if (30 <= (now - logTime)) {
 			tank->debuglog();
+			battery->debuglog();
 			logTime = now;
 		}
 	}

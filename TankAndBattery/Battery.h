@@ -1,12 +1,13 @@
 #pragma once
 #include <stdio.h>
+#include <array>
 #include "Vector2D.h"
 #include "Matrix33.h"
 
 class Battery
 {
 public:
-	Battery();
+	Battery(double width, double lenght);
 	Battery( const Vector2D& tPos );
 	virtual ~Battery();
 public:
@@ -15,17 +16,14 @@ public:
 	void debuglog();
 private:
 	Vector2D pos;
-	Vector2D frontLeft;
-	Vector2D frontRight;
-	Vector2D backLeft;
-	Vector2D backRight;
+	std::array<Vector2D, 4> point;
 	double angle;
 private:
-	const double WIDTH = 0.5;
-	const double LENGHT = 1.0;
-	const double RIGHT = WIDTH / 2;
-	const double LEFT = -WIDTH / 2;
-	const double FRONT = LENGHT;
-	const double BACK = 0;
+	double WIDTH;
+	double LENGHT;
+	double RIGHT;
+	double LEFT;
+	double FRONT;
+	double BACK;
 };
 

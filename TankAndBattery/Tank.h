@@ -1,4 +1,5 @@
 #pragma once
+#include <array>
 #include "Vector2D.h"
 #include "Matrix33.h"
 #include "Battery.h"
@@ -6,33 +7,28 @@
 class Tank
 {
 public:
-	Tank();
+	Tank( double width, double lenght );
 	virtual ~Tank();
 public:
-	void Advance( const double power );
+	void Forward( const double power );
 	void Rotate(const double& radian);
-	void BatRotate(const double& radian);
 	Vector2D GetPos() const;
-
+	void AddBattery( Battery *bat );
 	void debuglog();
 private:
 	void SetPos(const Vector2D& sPos);
 	void SetSidePos();
 private:
 	Vector2D pos;
-	Vector2D frontLeft;
-	Vector2D frontRight;
-	Vector2D backLeft;
-	Vector2D backRight;
-	
+	std::array<Vector2D, 4> point;
 	double angle;
-	Battery battery;
+	Battery* battery;
 private:
-	const double WIDTH = 2.0;
-	const double LENGHT = 3.0;
-	const double RIGHT = WIDTH / 2;
-	const double LEFT = -WIDTH / 2;
-	const double FRONT = LENGHT / 2;
-	const double BACK = -LENGHT / 2;
+	double WIDTH;
+	double LENGHT;
+	double RIGHT;
+	double LEFT;
+	double FRONT;
+	double BACK;
 };
 

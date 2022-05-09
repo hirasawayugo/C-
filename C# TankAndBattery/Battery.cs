@@ -8,16 +8,23 @@ class Battery
 	private Vector2D backRight;
 	private double angle;
 
-    private const double WIDTH = 0.5;
-	private const double LENGHT = 1.0;
-	private const double RIGHT = WIDTH / 2;
-	private const double LEFT = -WIDTH / 2;
-	private const double FRONT = LENGHT;
-	private const double BACK = 0;
+    private double WIDTH;
+	private double LENGHT;
+	private double RIGHT;
+	private double LEFT;
+	private double FRONT;
+	private double BACK;
 
-    public Battery()
+    public Battery(double width, double lenght)
     {
+        WIDTH = width;
+        LENGHT = lenght;
+        RIGHT = WIDTH / 2;
+        LEFT = -WIDTH / 2;
+        FRONT = LENGHT;
+        BACK = 0;
         UpdatePos(pos);
+
     }
 
     public void UpdatePos( Vector2D tPos )
@@ -50,8 +57,8 @@ class Battery
     public void Debuglog()
     {
         double bAngle = angle * 180 / 3.14;
-        Console.WriteLine("砲台 位置 X:{0} Y:{1} 角度:{2}\n", pos.X, pos.Y, bAngle);
-        Console.WriteLine("　　 前左 X:{0} Y:{1} \n　　 前右 X:{2} Y:{3}\n", frontLeft.X, frontLeft.Y,frontRight.X, frontRight.Y);
-        Console.WriteLine("　　 後左 X:{0} Y:{1} \n　　 後ろ右 X:{2} Y:{3}\n", backLeft.X, backLeft.Y, backRight.X, backRight.Y);
+        Console.WriteLine("砲台 位置 X:{0} Y:{1} 角度:{2}", pos.X, pos.Y, bAngle);
+        Console.WriteLine("　　 前左 X:{0} Y:{1} \n　　 前右 X:{2} Y:{3}", frontLeft.X, frontLeft.Y,frontRight.X, frontRight.Y);
+        Console.WriteLine("　　 後左 X:{0} Y:{1} \n　　 後ろ右 X:{2} Y:{3}", backLeft.X, backLeft.Y, backRight.X, backRight.Y);
     }
 }
