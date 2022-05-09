@@ -1,3 +1,4 @@
+using System;
 class Battery
 {
     private Vector2D pos;
@@ -13,6 +14,11 @@ class Battery
 	private const double LEFT = -WIDTH / 2;
 	private const double FRONT = LENGHT;
 	private const double BACK = 0;
+
+    public Battery()
+    {
+        UpdatePos(pos);
+    }
 
     public void UpdatePos( Vector2D tPos )
     {
@@ -39,5 +45,13 @@ class Battery
     {
         angle += radian;
         UpdatePos(pos);
+    }
+
+    public void Debuglog()
+    {
+        double bAngle = angle * 180 / 3.14;
+        Console.WriteLine("砲台 位置 X:{0} Y:{1} 角度:{2}\n", pos.X, pos.Y, bAngle);
+        Console.WriteLine("　　 前左 X:{0} Y:{1} \n　　 前右 X:{2} Y:{3}\n", frontLeft.X, frontLeft.Y,frontRight.X, frontRight.Y);
+        Console.WriteLine("　　 後左 X:{0} Y:{1} \n　　 後ろ右 X:{2} Y:{3}\n", backLeft.X, backLeft.Y, backRight.X, backRight.Y);
     }
 }

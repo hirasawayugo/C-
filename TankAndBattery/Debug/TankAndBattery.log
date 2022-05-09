@@ -1,9 +1,16 @@
-﻿  Tank.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(77,2): error C2065: 'fl': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(77,13): error C2065: 'fl': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(78,2): error C2065: 'fr': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(78,13): error C2065: 'fr': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(79,2): error C2065: 'bl': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(79,13): error C2065: 'bl': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(80,2): error C2065: 'br': 定義されていない識別子です。
-C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Tank.cpp(80,13): error C2065: 'br': 定義されていない識別子です。
+﻿  Battery.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(49,9): warning C4477: 'printf' : 書式文字列 '%0.2f' には、型 'double' の引数が必要ですが、可変個引数 1 は型 'Vector2D' です
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(49,9): warning C4477: 'printf' : 書式文字列 '%0.2f' には、型 'double' の引数が必要ですが、可変個引数 2 は型 'Vector2D' です
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(49,9): warning C4473: 'printf': 書式文字列として渡された引数が不足しています
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(49,9): message : プレースホルダーとそのパラメーターには 4 の可変個引数が必要ですが、2 が指定されています。
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(49,9): message : 不足している可変個引数 3 が書式文字列 '%0.2f' に必要です
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(50,9): warning C4477: 'printf' : 書式文字列 '%0.2f' には、型 'double' の引数が必要ですが、可変個引数 1 は型 'Vector2D' です
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(50,9): warning C4477: 'printf' : 書式文字列 '%0.2f' には、型 'double' の引数が必要ですが、可変個引数 2 は型 'Vector2D' です
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(50,9): warning C4473: 'printf': 書式文字列として渡された引数が不足しています
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(50,9): message : プレースホルダーとそのパラメーターには 4 の可変個引数が必要ですが、2 が指定されています。
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Battery.cpp(50,9): message : 不足している可変個引数 3 が書式文字列 '%0.2f' に必要です
+  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\main.cpp(7,13): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
+  Tank.cpp
+  コードを生成中...
+  TankAndBattery.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\TankAndBattery\Debug\TankAndBattery.exe
