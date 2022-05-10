@@ -11,5 +11,5 @@ B::~B()
 
 void B::Log()
 {
-	printf("B‚Å‚·\n");
+	printf("B\n");
 }

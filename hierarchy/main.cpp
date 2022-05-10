@@ -1,11 +1,24 @@
 #include "A.h"
 #include "B.h"
+#include "C.h"
+#include "D.h"
+#include "Base.h"
 
-void main()
+int main()
 {
-	A a;
-	B b;
-	a.AddChild(b);
+	A* a = new A;
+	B* b = new B;
+	C* c = new C;
+	D* d = new D;
 
-	a.ShowChild();
+	a->AddChild(b);
+	a->AddChild(c);
+	d->AddChild(a);
+
+	printf("Aの子供達は\n");
+	a->ShowChildren();
+	printf("\n");
+	printf("Dの子供達は\n");
+	d->ShowChildren();
+	return 0;
 }

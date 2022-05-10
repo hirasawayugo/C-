@@ -11,6 +11,6 @@ A::~A()
 
 void A::Log()
 {
-	printf("A‚Å‚·\n");
+	printf("A\n");
 }
 

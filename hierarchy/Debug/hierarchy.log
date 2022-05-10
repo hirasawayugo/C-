@@ -1,10 +1,8 @@
-﻿  main.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\Base.h(4,1): error C2011: 'Base': 'class' 型の再定義
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\Base.h(3): message : 'Base' の宣言を確認してください
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\B.h(5,1): error C2504: 'Base': 定義されていない基底クラスが宣言されています。
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\B.h(10,7): error C3668: 'B::Log': オーバーライド指定子 'override' を伴うメソッドは、基底クラス メソッドをオーバーライドしませんでした
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\main.cpp(5,1): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\main.cpp(8,4): error C2039: 'AddChild': 'A' のメンバーではありません
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\A.h(3): message : 'A' の宣言を確認してください
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\main.cpp(10,4): error C2039: 'ShowChild': 'A' のメンバーではありません
-C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\A.h(3): message : 'A' の宣言を確認してください
+﻿  A.cpp
+  B.cpp
+  Base.cpp
+  C.cpp
+  D.cpp
+  main.cpp
+  コードを生成中...
+  hierarchy.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\hierarchy\Debug\hierarchy.exe

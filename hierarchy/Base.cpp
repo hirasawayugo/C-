@@ -8,15 +8,18 @@ Base::~Base()
 {
 }
 
-void Base::AddChild(Base base)
+void Base::AddChild(Base* base)
 {
     children.push_back(base);
 }
 
-void Base::ShowChild()
+void Base::ShowChildren()
 {
-    std::list<Base> child;
-    for (auto child = children.begin(); child != children.end(); ++child) {
+    std::list<Base*>::iterator iter;
+    
+
+    for (iter = children.begin(); iter != children.end(); ++iter) {
+        Base* child = *iter;
         child->Log();
     }
 }
