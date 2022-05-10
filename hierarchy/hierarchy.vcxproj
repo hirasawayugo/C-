@@ -143,15 +143,20 @@
     <ClCompile Include="B.cpp" />
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="C.cpp" />
+    <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="D.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrix33.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A.h" />
     <ClInclude Include="B.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="C.h" />
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="D.h" />
+    <ClInclude Include="Matrix33.h" />
+    <ClInclude Include="Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

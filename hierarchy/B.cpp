@@ -8,8 +8,3 @@ B::B()
 B::~B()
 {
 }
-
-void B::Log()
-{
-	printf("B\n");
-}

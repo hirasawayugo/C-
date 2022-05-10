@@ -6,6 +6,5 @@ public:
 	A();
 	virtual~A();
 public:
-	void Log()override;
 };
 

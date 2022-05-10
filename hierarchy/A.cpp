@@ -9,8 +9,3 @@ A::~A()
 {
 }
 
-void A::Log()
-{
-	printf("A\n");
-}
-

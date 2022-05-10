@@ -6,7 +6,5 @@ class C : public Base
 public:
 	C();
 	virtual~C();
-public:
-	void Log()override;
 };
 
