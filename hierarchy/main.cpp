@@ -12,12 +12,15 @@ int main()
 	D* d = new D;
 
 	a->AddChild(b);
-	a->AddChild(c);
-	d->AddChild(a);
+	b->AddChild(c);
+	c->AddChild(d);
 
 	printf("Aの子供達は\n");
 	a->ShowChildren();
-	printf("\n");
+	printf("Bの子供達は\n");
+	b->ShowChildren();
+	printf("Cの子供達は\n");
+	c->ShowChildren();
 	printf("Dの子供達は\n");
 	d->ShowChildren();
 	return 0;

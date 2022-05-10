@@ -12,12 +12,16 @@ namespace C__hierarchy
             D d = new D();
 
             a.AddChild(b);
-            a.AddChild(c);
-            d.AddChild(a);
+            b.AddChild(c);
+            c.AddChild(d);
             
-            Console.WriteLine("Aの子供たちは");
+            Console.WriteLine("Aの子供は");
             a.ShowChildren();
-            Console.WriteLine("Dの子供たちは");
+            Console.WriteLine("Bの子供は");
+            b.ShowChildren();
+            Console.WriteLine("Cの子供は");
+            c.ShowChildren();
+            Console.WriteLine("Dの子供は");
             d.ShowChildren();
         }
     }

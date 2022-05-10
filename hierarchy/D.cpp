@@ -10,5 +10,5 @@ D::~D()
 
 void D::Log()
 {
-	printf("D");
+	printf("D\n");
 }
