@@ -1,0 +1,9 @@
+﻿  Matrix33.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(60,19): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(61,16): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(62,19): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(63,19): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(68,22): warning C4244: '+=': 'const double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(69,22): warning C4244: '+=': 'const double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\Matrix33.cpp(100): warning C4172: ローカル変数またはテンポラリのアドレスを返します: multVec
+  Hand Bones.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Hand Bones\x64\Debug\Hand Bones.exe
