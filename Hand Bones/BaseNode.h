@@ -12,6 +12,7 @@ public:
 protected:
 	void Foward( const Vector2D& vec );
 	void Rotate( const double& radian );
+public:
 	//ƒOƒ[ƒoƒ‹‚Ìæ“¾
 	Vector2D GetPos();
 	double GetAngle();

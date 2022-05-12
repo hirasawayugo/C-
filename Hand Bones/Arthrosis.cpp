@@ -16,13 +16,9 @@ Arthrosis::~Arthrosis()
 
 void Arthrosis::Move(double radian)
 {
-	if (radian > maxAngle)
+	if (lAngle + radian > maxAngle || lAngle + radian < minAngle)
 	{
-		radian = maxAngle;
-	}
-	if (radian < minAngle)
-	{
-		radian = minAngle;
+		radian = 0;
 	}
 	double angle = fixedAngle + radian;
 	Rotate(angle);

@@ -65,8 +65,8 @@ void Matrix33::Rotate(double angle)
 
 void Matrix33::Move(const Vector2D& vec)
 {
-	value[0][2] += vec.x;
-	value[1][2] += vec.y;
+	value[2][1] += vec.x;
+	value[2][1] += vec.y;
 }
 
 Matrix33& Matrix33::Multiply(Matrix33& other) const
@@ -95,8 +95,8 @@ Matrix33& Matrix33::operator*( Matrix33& other ) const
 Vector2D& Matrix33::Transform(const Vector2D& vec)const
 {
 	Vector2D multVec(0,0);
-	multVec.x = vec.x * value[0][0] + vec.y * value[0][1] + value[0][2];
-	multVec.y = vec.x * value[1][0] + vec.y * value[1][1] + value[1][2];
+	multVec.x = vec.x * value[0][0] + vec.y * value[1][0] + value[2][0];
+	multVec.y = vec.x * value[0][1] + vec.y * value[1][1] + value[2][1];
 	return multVec;
 }
 
