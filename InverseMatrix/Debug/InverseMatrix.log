@@ -1,0 +1,14 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(16,26): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(16,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(57,27): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(57,18): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(58,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(58,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(59,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(59,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(60,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(60,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(61,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\main.cpp(61,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+  InverseMatrix.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\InverseMatrix\Debug\InverseMatrix.exe
