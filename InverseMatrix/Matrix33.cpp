@@ -58,15 +58,31 @@ void Matrix33::Rotate(double angle)
 {
 	//“ñŽŸŒ³‚Ì‚½‚ßZŽ²‰ñ“]ŒÅ’è
 	value[0][0] = cos(angle);
-	value[0][1] = -sin(angle);
-	value[1][0] = sin(angle);
+	value[0][1] = sin(angle);
+	value[1][0] = -sin(angle);
 	value[1][1] = cos(angle);
 }
 
 void Matrix33::Move(const Vector2D& vec)
 {
-	value[0][2] += vec.x;
-	value[1][2] += vec.y;
+	value[0][2] = vec.x;
+	value[1][2] = vec.y;
+}
+
+Matrix33& Matrix33::Add( Matrix33& other) const
+{
+	Matrix33 mat;
+	for (int i = 0; i < SIZE; i++) {
+		for (int j = 0; j < SIZE; j++) {
+			mat.value[i][j] = value[i][j] + other.value[i][j];
+		}
+	}
+	return mat;
+}
+
+Matrix33& Matrix33::operator+(Matrix33& other) const
+{
+	return Add(other);
 }
 
 Matrix33& Matrix33::Multiply(Matrix33& other) const
@@ -108,7 +124,7 @@ Vector2D& Matrix33::operator*(const Vector2D& vec)const
 Matrix33& Matrix33::inverse() const
 {
 	Matrix33 iMat = Matrix33();
-	double det = value[0][0] * value[1][1] - value[1][0] * value[0][1];
+	double det = value[0][0] * value[1][1] - value[0][1] * value[1][0];
 	if (det == 0)return iMat;
 
 	iMat.value[0][0] = value[1][1] / det;

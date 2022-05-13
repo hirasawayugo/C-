@@ -1,6 +1,7 @@
 #pragma once
 #include <list>
 #include "Vector2D.h"
+#include "Matrix33.h"
 
 class BaseNode
 {
@@ -14,16 +15,16 @@ public:
 public:
 	//グローバルの取得
 	Vector2D GetPos();
-	double GetAngle();
+protected:
+	Matrix33 GetMatrix();
 public:
 	void Log();
 protected:
 	//ローカル
 	Vector2D lPos;
 	double lAngle;
-	//グローバル
-	Vector2D gPos;
-	double gAngle;
+
+	Matrix33 mat;
 	BaseNode* parent;
 	std::list<BaseNode*> children;
 };

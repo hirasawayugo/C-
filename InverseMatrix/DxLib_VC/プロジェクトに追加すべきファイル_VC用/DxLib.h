@@ -3811,7 +3811,7 @@ extern	int			CreateScalingMatrix(           MATRIX   *Out, float  sx, float  sy,
 extern	int			CreateScalingMatrixD(          MATRIX_D *Out, double sx, double sy, double sz ) ;												// スケーリング行列を作成する
 extern	int			CreateRotationXMatrix(         MATRIX   *Out, float  Angle ) ;																	// Ｘ軸を中心とした回転行列を作成する
 extern	int			CreateRotationXMatrixD(        MATRIX_D *Out, double Angle ) ;																	// Ｘ軸を中心とした回転行列を作成する
-extern	int			CreateRotationYMatrix(         MATRIX   *Out, float  Angle ) ;																	// Ｙ軸を中心とした回転行列を作成する
+extern	int			CreateRotationYMatrix(         MATRIX   *Out, float  Angle ) ;																	//$Ｙ軸を中心とした回転行列を作成する
 extern	int			CreateRotationYMatrixD(        MATRIX_D *Out, double Angle ) ;																	// Ｙ軸を中心とした回転行列を作成する
 extern	int			CreateRotationZMatrix(         MATRIX   *Out, float  Angle ) ;																	// Ｚ軸を中心とした回転行列を作成する
 extern	int			CreateRotationZMatrixD(        MATRIX_D *Out, double Angle ) ;																	// Ｚ軸を中心とした回転行列を作成する
