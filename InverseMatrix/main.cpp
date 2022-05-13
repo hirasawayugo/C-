@@ -60,12 +60,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			printfDx("ãˆÚ“®’†\n");
 		}
 		if (CheckHitKey(KEY_INPUT_Q) == 1) {
-			camera->Rotate(calc.Radians(1), false);
-			printfDx("‰E‰ñ“]’†\n");
+			origin->Rotate(calc.Radians(-1), false);
+			printfDx("¶‰ñ“]’†\n");
 		}
 		if (CheckHitKey(KEY_INPUT_E) == 1) {
-			camera->Rotate(calc.Radians(-1),false);
-			printfDx("¶‰ñ“]’†\n");
+			origin->Rotate(calc.Radians(1),false);
+			printfDx("‰E‰ñ“]’†\n");
 		}
 		if (CheckHitKey(KEY_INPUT_I) == 1 && !beforeIn) {
 			camera->inversion = !camera->inversion;
@@ -77,6 +77,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			beforeIn = CheckHitKey(KEY_INPUT_I);
 		}
 		origin->Rotate(calc.Radians(1), camera->inversion);
+		//B->Rotate(calc.Radians(2), true);
 
 		Vector2D oVec = winVec(origin->GetPos());
 		Vector2D aVec = winVec(A->GetPos());
