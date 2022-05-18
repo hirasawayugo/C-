@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\Vibration\main.cpp(19,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Vibration\main.cpp(124,21): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  Vibration.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Vibration\Debug\Vibration.exe
