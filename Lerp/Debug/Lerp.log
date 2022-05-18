@@ -1,2 +1,24 @@
-﻿  main.cpp
+﻿  Calculator.cpp
+  Drawer.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(5,45): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(5,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(6,46): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(6,26): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(46,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(46,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(52,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(52,17): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(59,43): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(59,34): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(59,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(59,16): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(66,43): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(66,34): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(66,25): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(66,16): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(72,24): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Drawer.cpp(72,16): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\Lerp\main.cpp(17,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+  コードを生成中...
   Lerp.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Lerp\Debug\Lerp.exe
