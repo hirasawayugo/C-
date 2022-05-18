@@ -98,10 +98,17 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		
 		//•`‰æ
 		for (int i = 0; i < 7; i++) {
-			draw.Circle(Vector2D(sx[i], sy[i]), 5, GetColor(i * (127 / 7), i * (127 / 7),0 ));
+			draw.Circle(Vector2D(sx[i], sy[i]), 5, GetColor(i * (255 / 7), 0, i * (255 / 7)));
 		}
 		for (int i = 0; i < rx.size() - 1; i++) {
-			draw.Circle(Vector2D(rx[i], ry[i]), 1, Drwawer::COLOR::WHITE);
+			double size = rx.size();
+			double cblend = (i + 1) / size;
+			if (cblend < 0.001 && rx.size() != 0) {
+				rx.erase(rx.begin() + i);
+				ry.erase(ry.begin() + i);
+				continue;
+			}
+			draw.Circle(Vector2D(rx[i], ry[i]), 1, GetColor(255 * cblend, 255 * cblend, 255 * cblend));
 		}
 		draw.Circle(Vector2D(x, y), Drwawer::COLOR::WHITE);
 

@@ -1,4 +1,7 @@
 ﻿  main.cpp
 C:\Users\hirasawa.yugo\Desktop\C++\CubicSpline\main.cpp(19,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
 C:\Users\hirasawa.yugo\Desktop\C++\CubicSpline\main.cpp(103,21): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\hirasawa.yugo\Desktop\C++\CubicSpline\main.cpp(111,84): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\CubicSpline\main.cpp(111,70): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\CubicSpline\main.cpp(111,56): warning C4244: '引数': 'double' から 'int' への変換です。データが失われる可能性があります。
   CubicSpline.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\CubicSpline\Debug\CubicSpline.exe
