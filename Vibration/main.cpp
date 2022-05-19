@@ -1,72 +1,27 @@
 #include "DxLib.h"
 #include "Drawer.h"
 #include "Calculator.h"
-#include "CubicSpline.h"
+#include "Camera.h"
+#include "Object.h"
 
 #include <vector>
 
 using namespace std;
 
 int mStartTime = 0;         //測定開始時刻
-double mCount = 0;             //カウンタ
-float mFps = 0;             //fps
-static const int N = 60;//平均を取るサンプル数
 static const double FPS = 60;	//設定したFPS
-const int dCount = 1000;
 
 void wait() {
 	int tookTime = GetNowCount() - mStartTime;	//かかった時間
-	int waitTime = mCount * 1000 / FPS - tookTime;	//待つべき時間
+	int waitTime = 1 / FPS * 1000 - tookTime;	//待つべき時間
 	if (waitTime > 0) {
 		Sleep(waitTime);	//待機
 	}
 }
 
 bool fps() {
-	if (mCount == 0) { //1フレーム目なら時刻を記憶
-		mStartTime = GetNowCount();
-	}
-	if (mCount == N) { //60フレーム目なら平均を計算する
-		int t = GetNowCount();
-		mFps = 1000.f / ((t - mStartTime) / (float)N);
-		mCount = 0;
-		mStartTime = t;
-	}
-	mCount++;
+	mStartTime = GetNowCount();
 	return true;
-}
-
-void Random(vector<double>& vec) {
-	if (vec.size() == 0) {
-		for (int i = 0; i < 7; i++) {
-			vec.push_back(GetRand(500) + 100);
-		}
-		return;
-	}
-	int size = vec.size();
-
-	for (int i = 0; i < size; i++) {
-		vec[i] = GetRand(500) + 100;
-	}
-}
-
-void SetVibrationData(vector<double>& x, vector<double>& y, double period, double amp, double time)
-{
-	double sT = x[x.size() - 1];
-	double halfPer = period / 2;
-	double t = sT;
-	double w = y[y.size() - 1] * -1;
-	//
-	while (t - sT< time)
-	{
-		t += halfPer;
-		x.push_back(t);
-		t += halfPer;
-		x.push_back(t);
-		w += amp;
-		y.push_back(w);
-		y.push_back(-w);
-	}
 }
 
 // プログラムは WinMain から始まります
@@ -80,52 +35,65 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return -1;			// エラーが起きたら直ちに終了
 	}
 	Calculator calc;
-	double blend = 0;
-	bool fin = false;
+	bool isVibing = false;
+	double currentSec = 0;
+	double blendMax = 5.0;
+	double time = 0.5;
+	const int maxX = 20;
+	const int maxY = 50;
+	double xw = maxX;
+	double yw = maxY;
 
-	//x = 時間(1周期) 1周期 = 10
-	vector<double> sx;
-	//y = 振幅(揺れの強さ)
-	vector<double> sy;
-
-	sx.push_back(0);
-	sy.push_back(0);
-	SetVibrationData(sx, sy, 20, 5, 200);
-	SetVibrationData(sx, sy, 20, 30, 200);
-	SetVibrationData(sx, sy, 20, -30, 300);
-	sx.push_back(sx[sx.size() - 1]);
-	sy.push_back(0);
-
-	 CubicSpline csx(sx);
-	 CubicSpline csy(sy);
-	 vector<double> rx;
-	 vector<double> ry;
-	 double x;
-	 double y;
-
-	Vector2D vec(0, 0);
+	Camera* camera = new Camera();
+	Object object;
+	object.SetCamera(camera);
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
 	{
-		if (!fin) {
-			x = csx.Calc(blend);
-			y = csy.Calc(blend);
-			rx.push_back(x);
-			ry.push_back(y);
+		clsDx();
 
-			if (blend > sx.size() - 1)
-			{
-				fin = true;
+		if (CheckHitKey(KEY_INPUT_A) == 1) {
+			camera->Foward(Vector2D(-1, 0));
+			printfDx("左移動中\n");
+		}
+		if (CheckHitKey(KEY_INPUT_D) == 1) {
+			camera->Foward(Vector2D(1, 0));
+			printfDx("右移動中\n");
+		}
+		if (CheckHitKey(KEY_INPUT_S) == 1) {
+			camera->Foward(Vector2D(0, -1));
+			printfDx("下移動中\n");
+		}
+		if (CheckHitKey(KEY_INPUT_W) == 1) {
+			camera->Foward(Vector2D(0, 1));
+			printfDx("上移動中\n");
+		}
+		if (CheckHitKey(KEY_INPUT_Q) == 1) {
+			camera->Rotate(calc.Radians(-1));
+			printfDx("左回転中\n");
+		}
+		if (CheckHitKey(KEY_INPUT_E) == 1) {
+			camera->Rotate(calc.Radians(1));
+			printfDx("右回転中\n");
+		}
+
+		if (CheckHitKey(KEY_INPUT_I) == 1 && !isVibing) {
+			isVibing = true;
+		}
+		if (isVibing) {
+			camera->Vibration(xw, 0, currentSec);
+			//1フレーム1/60秒のため1/60秒を足す
+			currentSec += 1.0 / 60.0;
+			xw -= (double)maxX / (60.0 * 0.25);
+			if (xw <= 0) {
+				isVibing = false;
+				xw = maxX;
+				currentSec = 0;
 			}
-			blend += 0.05;
 		}
-		
+		Vector2D pos = object.GetPos();
 		//描画
-		for (int i = 1; i < rx.size(); i++) {
-			draw.Circle(Vector2D(rx[i], ry[i] + 350), 1, Drwawer::COLOR::WHITE);
-			draw.Line(Vector2D(rx[i - 1], ry[i - 1] + 350), Vector2D(rx[i], ry[i] + 350), Drwawer::COLOR::WHITE);
-		}
-		draw.Circle(Vector2D(x, y + 350), Drwawer::COLOR::WHITE);
+		draw.Circle(pos, 100,Drwawer::COLOR::WHITE);
 
 		fps();
 		wait();

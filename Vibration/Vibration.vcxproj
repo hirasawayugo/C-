@@ -152,14 +152,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CubicSpline.cpp" />
     <ClCompile Include="Drawer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrix33.cpp" />
+    <ClCompile Include="Object.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="CubicSpline.h" />
     <ClInclude Include="Drawer.h" />
+    <ClInclude Include="Matrix33.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
