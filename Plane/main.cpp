@@ -32,69 +32,58 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	{
 		return -1;			// エラーが起きたら直ちに終了
 	}
+	SetUseZBuffer3D(TRUE);
+	SetWriteZBuffer3D(TRUE);
+	SetCameraPositionAndTarget_UpVecY(VGet(0,0,-500), VGet(0,0,0));
+
 	double angle = 0;
 	double lenght = 200;
-	Vector2D plate[2] = {Vector2D( 0, 0 ),Vector2D( 0,lenght)};
-	Vector2D point = Vector2D(0,0);
+	vector<Vector3D> plate {Vector3D(-lenght,lenght,0),Vector3D(lenght,lenght,0),Vector3D(lenght,-lenght,0),Vector3D(-lenght,-lenght,0)};
+	Vector3D point = Vector3D(1,1,1);
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
 	{
-		clsDx();
+		if (CheckHitKey(KEY_INPUT_W) == 0)
+		{
+			for (int i = 0; i < 4; i++) {
+				plate[i].z += 1;
+			}
+		}
+		if (CheckHitKey(KEY_INPUT_S) == 0)
+		{
+			for (int i = 0; i < 4; i++) {
+				plate[i].z -= 1;
+			}
+		}
 
-		if (CheckHitKey(KEY_INPUT_A) == 1) {
-			point.Add(Vector2D(-1, 0));
-			printfDx("左移動中\n");
-		}
-		if (CheckHitKey(KEY_INPUT_D) == 1) {
-			point.Add(Vector2D(1, 0));
-			printfDx("右移動中\n");
-		}
-		if (CheckHitKey(KEY_INPUT_S) == 1) {
-			point.Add(Vector2D(0, -1));
-			printfDx("下移動中\n");
-		}
-		if (CheckHitKey(KEY_INPUT_W) == 1) {
-			point.Add(Vector2D(0, 1));
-			printfDx("上移動中\n");
-		}
-		if (CheckHitKey(KEY_INPUT_Q) == 1) {
-			angle -= 0.1;
-			Matrix33 mat;
-			mat.Rotate(angle);
-			plate[1] = plate[0] + mat * Vector2D(0, lenght);
-			printfDx("左回転中\n");
-		}
-		if (CheckHitKey(KEY_INPUT_E) == 1) {
-			angle += 0.1;
-			Matrix33 mat;
-			mat.Rotate(angle);
-			plate[1] = plate[0] + mat * Vector2D(0,lenght);
-			printfDx("右回転中\n");
-		}
-		//線と点の距離
-		//ax + by = c
-		//(ax - by + d)/√a² + b²
+		//面と点の距離
+		//ax + by + cz = d
 
-		double a = plate[1].y - plate[0].y;
-		double b = plate[1].x - plate[0].x;
-		double d = plate[1].x * plate[0].y - plate[1].y * plate[0].x;
-
-		double x = point.x;
-		double y = point.y;
-
-		double normal = sqrt(pow(a, 2) + pow(b, 2));
-
-		double dis = a / normal * x - b / normal * y + d / normal;
-		
+		//法線ベクトルn
+		Vector3D n = point;
+		//法線の値をabcに移行
+		double a = plate[0].x;
+		double b = plate[0].y;
+		double c = plate[0].z;
+		//面の点の座標
+		double x = n.x;
+		double y = n.y;
+		double z = n.z;
+		double d = 0;
+		//double d = -(a + x + b * y + c * z);
+		//法線ベクトルを正規化
+		double normal = sqrt(a*a + b*b + c*c);
+		//距離
+		double dis =  (a * x + b * y + c * z + d )/ normal;
 
 		//描画
-		draw.Line(plate[0] + Vector2D(400, 400), plate[1] + Vector2D(400, 400), Drwawer::COLOR::WHITE);
-		if (dis < 0) {
-			draw.Circle(point + Vector2D(400, 400), 10, Drwawer::COLOR::RED);
+		if ( dis <= 0) {
+			draw.Sphere(point, Drwawer::COLOR::BLUE);
 		}
 		else {
-			draw.Circle(point + Vector2D(400, 400), 10, Drwawer::COLOR::BLUE);
+			draw.Sphere(point, Drwawer::COLOR::RED);
 		}
+		draw.Plate(plate, Drwawer::COLOR::WHITE );
 		
 
 		fps();

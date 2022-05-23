@@ -38,9 +38,9 @@ struct Vector3D
 		y -= vec.y;
 		z -= vec.z;
 	}
-	void operator-(Vector3D& vec)
+	Vector3D operator-(Vector3D& vec)
 	{
-		Sub(vec);
+		return Vector3D(x - vec.x, y - vec.y, z - vec.z);
 	}
 	//ì‡êœ
 	double Dot(const Vector3D& vec)

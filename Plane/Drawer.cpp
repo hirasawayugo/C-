@@ -66,6 +66,42 @@ void Drwawer::Line(const Vector2D& vec1, const Vector2D& vec2, const unsigned in
 	DrawLine(cVec1.x, cVec1.y, cVec2.x, cVec2.y, color);
 }
 
+void Drwawer::Sphere(const Vector3D& vec, COLOR type)
+{
+	unsigned int color = Color(type);
+	DrawSphere3D(VGet(vec.x,vec.y,vec.z), r, 100, color, color, true);
+}
+
+void Drwawer::Sphere(const Vector3D& vec,const unsigned int& color)
+{
+	DrawSphere3D(VGet(vec.x, vec.y, vec.z), r, 100, color,color, true );
+}
+
+void Drwawer::Plate(const vector<Vector3D> vec, COLOR type)
+{
+	unsigned int color = Color(type);
+	DrawTriangle3D(VGet(vec[0].x, vec[0].y, vec[0].z),
+		VGet(vec[1].x, vec[1].y, vec[1].z),
+		VGet(vec[3].x, vec[3].y, vec[3].z),
+		color, false);
+	DrawTriangle3D(VGet(vec[2].x, vec[2].y, vec[2].z),
+		VGet(vec[3].x, vec[3].y, vec[3].z),
+		VGet(vec[1].x, vec[1].y, vec[1].z),
+		color, false);
+}
+
+void Drwawer::Plate(const vector<Vector3D> vec, const unsigned int& color)
+{
+	DrawTriangle3D(VGet(vec[0].x, vec[0].y, vec[0].z),
+					VGet(vec[1].x, vec[1].y, vec[1].z),
+					VGet(vec[2].x, vec[2].y, vec[2].z),
+					color, true);
+	DrawTriangle3D(VGet(vec[4].x, vec[4].y, vec[4].z),
+					VGet(vec[2].x, vec[2].y, vec[2].z),
+					VGet(vec[1].x, vec[1].y, vec[1].z),
+					color, true);
+}
+
 void Drwawer::Pixel(const Vector2D& vec, COLOR type)
 {
 	Vector2D cVec = CastWinVec(vec);
