@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\Line\main.cpp(14,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+  Line.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Line\Debug\Line.exe
