@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\hirasawa.yugo\Desktop\C++\ViewAngle\main.cpp(14,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\ViewAngle\main.cpp(56,48): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ViewAngle.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\ViewAngle\Debug\ViewAngle.exe
