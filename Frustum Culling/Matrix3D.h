@@ -23,6 +23,7 @@ public:
 	void Initialize();
 	void SetValue(float* row1, float* row2, float* row3, float* row4);
 	float (*GetValue() ) [SIZE];
+	Matrix3D Inverse()const;
 public:
 	void Rotate( double angle, AXIS axis );
 	void Move( const Vector3D& vec );

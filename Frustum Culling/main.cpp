@@ -24,7 +24,7 @@ bool fps() {
 	return true;
 }
 //平面と点の距離
-double Distance( Vector3D pos1, Vector3D pos2, Vector3D pos3, Vector3D point ) {
+double planeAndPointDiff( Vector3D pos1, Vector3D pos2, Vector3D pos3, Vector3D point ) {
 	//法線ベクトルn
 	Vector3D n = point;
 	//nの座標
@@ -43,6 +43,25 @@ double Distance( Vector3D pos1, Vector3D pos2, Vector3D pos3, Vector3D point ) {
 	double normal = sqrt(a * a + b * b + c * c);
 	//距離
 	return (a * x + b * y + c * z + d) / normal;
+}
+
+bool isViewing( Vector3D& point, Camera& camera) {
+	//面と点の距離
+	bool viewing = true;
+	vector<Vector3D>plate = camera.GetPlate();
+	double dis[6];
+	dis[0] = planeAndPointDiff(plate[0], plate[2], plate[4], point);
+	dis[1] = planeAndPointDiff(plate[3], plate[1], plate[7], point);
+	dis[2] = planeAndPointDiff(plate[2], plate[0], plate[3], point);
+	dis[3] = planeAndPointDiff(plate[4], plate[2], plate[5], point);
+	dis[4] = planeAndPointDiff(plate[6], plate[4], plate[7], point);
+	dis[5] = planeAndPointDiff(plate[0], plate[6], plate[1], point);
+	for (int i = 0; i < 6; i++) {
+		if (dis[i] <= 0) {
+			viewing = false;
+		}
+	}
+	return viewing;
 }
 
 double pointDiff(Vector3D pos1, Vector3D pos2) {
@@ -70,31 +89,35 @@ void Input( Vector3D& point, Vector3D& vCamera, Camera& camera) {
 	{
 		point.x += 1;
 	}
-	if (CheckHitKey(KEY_INPUT_UP) == 0)
-	{
-		Calculator calc;
-		camera.AddViewAngle(calc.Radians(1));
-	}
-	if (CheckHitKey(KEY_INPUT_DOWN) == 0)
-	{
-		Calculator calc;
-		camera.AddViewAngle(calc.Radians(-1));
-	}
 
 	if (CheckHitKey(KEY_INPUT_Q) == 0)
 	{
 		Calculator calc;
 		Matrix3D mat;
-		mat.Rotate(calc.Radians(1),Matrix3D::AXIS::Y);
-		vCamera = mat * vCamera;
+		mat.Rotate(calc.Radians(-1),Matrix3D::AXIS::Y);
+		camera.Transform(mat);
 	}
 
 	if (CheckHitKey(KEY_INPUT_E) == 0)
 	{
 		Calculator calc;
 		Matrix3D mat;
-		mat.Rotate(calc.Radians(-1), Matrix3D::AXIS::Y);
-		vCamera = mat * vCamera;
+		mat.Rotate(calc.Radians(1), Matrix3D::AXIS::Y);
+		camera.Transform(mat);
+	}
+
+	if (CheckHitKey(KEY_INPUT_UP) == 0)
+	{
+		Matrix3D mat;
+		mat.Move(Vector3D(0,1,0));
+		camera.Transform(mat);
+	}
+
+	if (CheckHitKey(KEY_INPUT_DOWN) == 0)
+	{
+		Matrix3D mat;
+		mat.Move(Vector3D(0, -1, 0));
+		camera.Transform(mat);
 	}
 }
 
@@ -115,43 +138,19 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	Drwawer draw;
 	Camera camera;
-	Vector3D point = Vector3D(1,1,1);
+	Vector3D point = Vector3D(0,0,50);
+	Vector3D vpoint = camera.GetViewMatrix() * point;
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
 	{
 		SetCameraPositionAndTarget_UpVecY(VGet(vCamera.x, vCamera.y, vCamera.z), VGet(0, 0, 0));
 
 		Input( point, vCamera, camera );
+		Matrix3D mat;
+		mat.Move(point);
+		vpoint = camera.GetViewMatrix() * point;
 
-		//面と点の距離
-		bool isIncluding = true;
 		vector<Vector3D>plate = camera.GetPlate();
-		double dis;
-		dis = Distance(plate[0], plate[2], plate[4], point);
-		if (dis <= 0) {
-			isIncluding = false;
-		}
-		dis = Distance(plate[3], plate[1], plate[7], point);
-		if (dis <= 0) {
-			isIncluding = false;
-		}
-		dis = Distance(plate[2], plate[0], plate[3], point);
-		if (dis <= 0) {
-			isIncluding = false;
-		}
-		dis = Distance(plate[4], plate[2], plate[5], point);
-		if (dis <= 0) {
-			isIncluding = false;
-		}
-		dis = Distance(plate[6], plate[4], plate[7], point);
-		if (dis <= 0) {
-			isIncluding = false;
-		}
-		dis = Distance(plate[0], plate[6], plate[1], point);
-		if (dis <= 0) {
-			isIncluding = false;
-		}
-		
 		//箱の線
 		draw.Line(plate[0], plate[2], GetColor(125, 125, 125));
 		draw.Line(plate[0], plate[1], GetColor(125, 125, 125));
@@ -165,31 +164,21 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		draw.Line(plate[6], plate[7], GetColor(125, 125, 125));
 		draw.Line(plate[6], plate[0], GetColor(125, 125, 125));
 		draw.Line(plate[7], plate[1], GetColor(125, 125, 125));
-
-		double pDiff = pointDiff(vCamera, point);
-		double cDiff = pointDiff(vCamera, camera.GetPos());
 		
-		if (pDiff < cDiff) {
-			draw.Sphere(camera.GetPos(), Drwawer::COLOR::WHITE);
-			//描画
-			if (!isIncluding) {
-				draw.Sphere(point, Drwawer::COLOR::BLUE);
-			}
-			else {
-				draw.Sphere(point, Drwawer::COLOR::RED);
-			}
+		draw.Sphere(camera.GetPos(), Drwawer::COLOR::WHITE);
+		//描画
+		if (!isViewing(point, camera)) {
+			draw.Sphere(point, Drwawer::COLOR::BLUE);
 		}
 		else {
-			//描画
-			if (!isIncluding) {
-				draw.Sphere(point, Drwawer::COLOR::BLUE);
-			}
-			else {
-				draw.Sphere(point, Drwawer::COLOR::RED);
-			}
-			draw.Sphere(camera.GetPos(), Drwawer::COLOR::WHITE);
+			draw.Sphere(point, Drwawer::COLOR::RED);
 		}
-
+		if (!isViewing(vpoint, camera)) {
+			draw.Sphere(vpoint, Drwawer::COLOR::GREEN);
+		}
+		else {
+			draw.Sphere(vpoint, Drwawer::COLOR::YELLOW);
+		}
 		fps();
 		wait();
 	}

@@ -70,6 +70,70 @@ float(*Matrix3D::GetValue() )[SIZE]
 	return value;
 }
 
+Matrix3D Matrix3D::Inverse() const
+{
+	Matrix3D mat;
+	
+	float num1 = value[0][0];
+	float num2 = value[0][1];
+	float num3 = value[0][2];
+	float num4 = value[0][3];
+	float num5 = value[1][0];
+	float num6 = value[1][1];
+	float num7 = value[1][2];
+	float num8 = value[1][3];
+	float num9 = value[2][0];
+	float num10 = value[2][1];
+	float num11 = value[2][2];
+	float num12 = value[2][3];
+	float num13 = value[3][0];
+	float num14 = value[3][1];
+	float num15 = value[3][2];
+	float num16 = value[3][3];
+	float num17 = (float)((double)num11 * (double)num16 - (double)num12 * (double)num15);
+	float num18 = (float)((double)num10 * (double)num16 - (double)num12 * (double)num14);
+	float num19 = (float)((double)num10 * (double)num15 - (double)num11 * (double)num14);
+	float num20 = (float)((double)num9 * (double)num16 - (double)num12 * (double)num13);
+	float num21 = (float)((double)num9 * (double)num15 - (double)num11 * (double)num13);
+	float num22 = (float)((double)num9 * (double)num14 - (double)num10 * (double)num13);
+	float num23 = (float)((double)num6 * (double)num17 - (double)num7 * (double)num18 + (double)num8 * (double)num19);
+	float num24 = (float)-((double)num5 * (double)num17 - (double)num7 * (double)num20 + (double)num8 * (double)num21);
+	float num25 = (float)((double)num5 * (double)num18 - (double)num6 * (double)num20 + (double)num8 * (double)num22);
+	float num26 = (float)-((double)num5 * (double)num19 - (double)num6 * (double)num21 + (double)num7 * (double)num22);
+	float num27 = (float)(1.0 / ((double)num1 * (double)num23 + (double)num2 * (double)num24 + (double)num3 * (double)num25 + (double)num4 * (double)num26));
+
+	mat.value[0][0] = num23 * num27;
+	mat.value[1][0] = num24 * num27;
+	mat.value[2][0] = num25 * num27;
+	mat.value[3][0] = num26 * num27;
+	mat.value[0][1] = (float)-((double)num2 * (double)num17 - (double)num3 * (double)num18 + (double)num4 * (double)num19) * num27;
+	mat.value[1][1] = (float)((double)num1 * (double)num17 - (double)num3 * (double)num20 + (double)num4 * (double)num21) * num27;
+	mat.value[2][1] = (float)-((double)num1 * (double)num18 - (double)num2 * (double)num20 + (double)num4 * (double)num22) * num27;
+	mat.value[3][1] = (float)((double)num1 * (double)num19 - (double)num2 * (double)num21 + (double)num3 * (double)num22) * num27;
+	float num28 = (float)((double)num7 * (double)num16 - (double)num8 * (double)num15);
+	float num29 = (float)((double)num6 * (double)num16 - (double)num8 * (double)num14);
+	float num30 = (float)((double)num6 * (double)num15 - (double)num7 * (double)num14);
+	float num31 = (float)((double)num5 * (double)num16 - (double)num8 * (double)num13);
+	float num32 = (float)((double)num5 * (double)num15 - (double)num7 * (double)num13);
+	float num33 = (float)((double)num5 * (double)num14 - (double)num6 * (double)num13);
+	mat.value[0][2] = (float)((double)num2 * (double)num28 - (double)num3 * (double)num29 + (double)num4 * (double)num30) * num27;
+	mat.value[1][2] = (float)-((double)num1 * (double)num28 - (double)num3 * (double)num31 + (double)num4 * (double)num32) * num27;
+	mat.value[2][2] = (float)((double)num1 * (double)num29 - (double)num2 * (double)num31 + (double)num4 * (double)num33) * num27;
+	mat.value[3][2] = (float)-((double)num1 * (double)num30 - (double)num2 * (double)num32 + (double)num3 * (double)num33) * num27;
+	float num34 = (float)((double)num7 * (double)num12 - (double)num8 * (double)num11);
+	float num35 = (float)((double)num6 * (double)num12 - (double)num8 * (double)num10);
+	float num36 = (float)((double)num6 * (double)num11 - (double)num7 * (double)num10);
+	float num37 = (float)((double)num5 * (double)num12 - (double)num8 * (double)num9);
+	float num38 = (float)((double)num5 * (double)num11 - (double)num7 * (double)num9);
+	float num39 = (float)((double)num5 * (double)num10 - (double)num6 * (double)num9);
+	mat.value[0][3] = (float)-((double)num2 * (double)num34 - (double)num3 * (double)num35 + (double)num4 * (double)num36) * num27;
+	mat.value[1][3] = (float)((double)num1 * (double)num34 - (double)num3 * (double)num37 + (double)num4 * (double)num38) * num27;
+	mat.value[2][3] = (float)-((double)num1 * (double)num35 - (double)num2 * (double)num37 + (double)num4 * (double)num39) * num27;
+	mat.value[3][3] = (float)((double)num1 * (double)num36 - (double)num2 * (double)num38 + (double)num3 * (double)num39) * num27;
+
+	return mat;
+}
+
 void Matrix3D::Rotate(double angle, AXIS axis)
 {
 	float cosV = cos(angle);
