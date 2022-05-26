@@ -1,5 +1,8 @@
 ﻿#include "DxLib.h"
 #include "Drawer.h"
+#include "Camera.h"
+#include "Matrix3D.h"
+#include "Calculator.h"
 
 #include <vector>
 
@@ -42,11 +45,63 @@ double Distance( Vector3D pos1, Vector3D pos2, Vector3D pos3, Vector3D point ) {
 	return (a * x + b * y + c * z + d) / normal;
 }
 
+double pointDiff(Vector3D pos1, Vector3D pos2) {
+	double x = pos1.x - pos2.x;
+	double y = pos1.y - pos2.y;
+	double z = pos1.z - pos2.z;
+
+	return sqrt(x * x + y * y + z * z);
+}
+
+void Input( Vector3D& point, Vector3D& vCamera, Camera& camera) {
+	if (CheckHitKey(KEY_INPUT_W) == 0)
+	{
+		point.z -= 1;
+	}
+	if (CheckHitKey(KEY_INPUT_S) == 0)
+	{
+		point.z += 1;
+	}
+	if (CheckHitKey(KEY_INPUT_A) == 0)
+	{
+		point.x -= 1;
+	}
+	if (CheckHitKey(KEY_INPUT_D) == 0)
+	{
+		point.x += 1;
+	}
+	if (CheckHitKey(KEY_INPUT_UP) == 0)
+	{
+		Calculator calc;
+		camera.AddViewAngle(calc.Radians(1));
+	}
+	if (CheckHitKey(KEY_INPUT_DOWN) == 0)
+	{
+		Calculator calc;
+		camera.AddViewAngle(calc.Radians(-1));
+	}
+
+	if (CheckHitKey(KEY_INPUT_Q) == 0)
+	{
+		Calculator calc;
+		Matrix3D mat;
+		mat.Rotate(calc.Radians(1),Matrix3D::AXIS::Y);
+		vCamera = mat * vCamera;
+	}
+
+	if (CheckHitKey(KEY_INPUT_E) == 0)
+	{
+		Calculator calc;
+		Matrix3D mat;
+		mat.Rotate(calc.Radians(-1), Matrix3D::AXIS::Y);
+		vCamera = mat * vCamera;
+	}
+}
+
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	ChangeWindowMode(TRUE);
-	Drwawer draw;
 
 	if (DxLib_Init() == -1)		// ＤＸライブラリ初期化処理
 	{
@@ -54,49 +109,23 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	}
 	SetUseZBuffer3D(TRUE);
 	SetWriteZBuffer3D(TRUE);
-	SetCameraPositionAndTarget_UpVecY(VGet(-500,0,-100), VGet(0,0,-100));
 
-	double angle = 0;
-	double bLenght = 200;
-	double fLenght = 50;
-	double depth = 200;
+	Vector3D vCamera = Vector3D(0, 0, -500);
+	SetCameraPositionAndTarget_UpVecY(VGet(vCamera.x, vCamera.y, vCamera.z), VGet(0,0,0));
 
-	//描画する範囲の箱の8点
-	vector<Vector3D> plate {Vector3D(-bLenght, bLenght,0),Vector3D(-fLenght, fLenght,-depth),
-							Vector3D( bLenght, bLenght,0),Vector3D( fLenght, fLenght,-depth),
-							Vector3D( bLenght,-bLenght,0),Vector3D( fLenght,-fLenght,-depth),
-							Vector3D(-bLenght,-bLenght,0),Vector3D(-fLenght,-fLenght,-depth) };
+	Drwawer draw;
+	Camera camera;
 	Vector3D point = Vector3D(1,1,1);
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
 	{
-		if (CheckHitKey(KEY_INPUT_W) == 0)
-		{
-			point.x -= 1;
-		}
-		if (CheckHitKey(KEY_INPUT_S) == 0)
-		{
-			point.x += 1;
-		}
-		if (CheckHitKey(KEY_INPUT_A) == 0)
-		{
-			point.z -= 1;
-		}
-		if (CheckHitKey(KEY_INPUT_D) == 0)
-		{
-			point.z += 1;
-		}
-		if (CheckHitKey(KEY_INPUT_UP) == 0)
-		{
-			point.y -= 1;
-		}
-		if (CheckHitKey(KEY_INPUT_DOWN) == 0)
-		{
-			point.y += 1;
-		}
+		SetCameraPositionAndTarget_UpVecY(VGet(vCamera.x, vCamera.y, vCamera.z), VGet(0, 0, 0));
+
+		Input( point, vCamera, camera );
 
 		//面と点の距離
 		bool isIncluding = true;
+		vector<Vector3D>plate = camera.GetPlate();
 		double dis;
 		dis = Distance(plate[0], plate[2], plate[4], point);
 		if (dis <= 0) {
@@ -122,14 +151,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		if (dis <= 0) {
 			isIncluding = false;
 		}
-		//描画
-		if (!isIncluding) {
-			draw.Sphere(point, Drwawer::COLOR::BLUE);
-		}
-		else {
-			draw.Sphere(point, Drwawer::COLOR::RED);
-		}
-
+		
 		//箱の線
 		draw.Line(plate[0], plate[2], GetColor(125, 125, 125));
 		draw.Line(plate[0], plate[1], GetColor(125, 125, 125));
@@ -143,6 +165,30 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		draw.Line(plate[6], plate[7], GetColor(125, 125, 125));
 		draw.Line(plate[6], plate[0], GetColor(125, 125, 125));
 		draw.Line(plate[7], plate[1], GetColor(125, 125, 125));
+
+		double pDiff = pointDiff(vCamera, point);
+		double cDiff = pointDiff(vCamera, camera.GetPos());
+		
+		if (pDiff < cDiff) {
+			draw.Sphere(camera.GetPos(), Drwawer::COLOR::WHITE);
+			//描画
+			if (!isIncluding) {
+				draw.Sphere(point, Drwawer::COLOR::BLUE);
+			}
+			else {
+				draw.Sphere(point, Drwawer::COLOR::RED);
+			}
+		}
+		else {
+			//描画
+			if (!isIncluding) {
+				draw.Sphere(point, Drwawer::COLOR::BLUE);
+			}
+			else {
+				draw.Sphere(point, Drwawer::COLOR::RED);
+			}
+			draw.Sphere(camera.GetPos(), Drwawer::COLOR::WHITE);
+		}
 
 		fps();
 		wait();
