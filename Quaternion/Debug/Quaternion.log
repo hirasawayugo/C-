@@ -1,21 +1,6 @@
 ﻿  main.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(14,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
-  Matrix3D.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Matrix3D.cpp(139,13): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Matrix3D.cpp(140,13): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Matrix3D.cpp(166,22): warning C4244: '+=': 'const double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Matrix3D.cpp(167,22): warning C4244: '+=': 'const double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Matrix3D.cpp(168,22): warning C4244: '+=': 'const double' から 'float' への変換です。データが失われる可能性があります。
-  Quaternion.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(26,34): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(27,30): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(28,30): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(29,30): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(30,34): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(31,30): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(32,30): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(33,30): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Quaternion.cpp(34,34): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  コードを生成中...
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Matrix3D.cpp(200): warning C4172: ローカル変数またはテンポラリのアドレスを返します: multVec
+C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(15,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(50,81): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(50,73): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(50,65): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
   Quaternion.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Debug\Quaternion.exe

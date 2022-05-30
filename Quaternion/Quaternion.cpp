@@ -10,7 +10,19 @@ Quaternion::~Quaternion()
 {
 }
 
-Quaternion Quaternion::multiply(Quaternion& mQuat, double& theta)
+Quaternion Quaternion::Inverse()
+{
+	double num2 = x * x + y * y + z * z + w + w;
+	double num = 1 / num2;
+	Quaternion in;
+	in.x = -x * num;
+	in.y = -y * num;
+	in.z = -z * num;
+	in.w = w * num;
+	return in;
+}
+
+Quaternion Quaternion::multiply(Quaternion& mQuat)
 {
 	Quaternion sq;
 	sq.x = x * mQuat.w + y * mQuat.z - z * mQuat.y + w * mQuat.x;
@@ -52,4 +64,12 @@ void Quaternion::createQuaternion(double sx, double sy, double sz, double sw)
 	y = sy;
 	z = sz;
 	w = sw;
+}
+
+void Quaternion::createQuaternion(Vector3D n, double theta)
+{
+	x = n.x * sin(theta / 2);
+	y = n.y * sin(theta / 2);
+	z = n.z * sin(theta / 2);
+	w = cos(theta / 2);
 }
