@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 public class Single : MonoBehaviour
 {
     private Subject<string> sub = new Subject<string>();
-    async void Start()
+    void Start()
     {
         sub
         .Single()
