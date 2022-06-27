@@ -5,14 +5,12 @@ using System.Threading.Tasks;
 
 public class Amb : MonoBehaviour
 {
-    private Subject<string> sub = new Subject<string>();
     private Subject<string> sub1 = new Subject<string>();
     private Subject<string> sub2 = new Subject<string>();
     void Start()
     {
-        sub
-        .Amb(sub2)
-        .Amb(sub1)
+        UniRx.Observable
+        .Amb(sub2,sub1)
         .Subscribe(x => Debug.Log(x));
         sub1.OnNext("A");
         sub2.OnNext("B");
