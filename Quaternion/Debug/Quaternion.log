@@ -1,6 +1,5 @@
 ﻿  main.cpp
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(15,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(50,81): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(50,73): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\main.cpp(50,65): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-  Quaternion.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C++\Quaternion\Debug\Quaternion.exe
+C:\Users\hirasawa.yugo\Desktop\C-\Quaternion\main.cpp(15,15): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C-\Quaternion\main.cpp(72,76): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\hirasawa.yugo\Desktop\C-\Quaternion\main.cpp(72,54): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+  Quaternion.vcxproj -> C:\Users\hirasawa.yugo\Desktop\C-\Quaternion\Debug\Quaternion.exe

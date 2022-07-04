@@ -35,26 +35,53 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	SetUseZBuffer3D(TRUE);
 	SetWriteZBuffer3D(TRUE);
 	SetCameraPositionAndTargetAndUpVec(VGet(0,0,-200), VGet(0,0,0), VGet(0,1,0));
+	SetLightPosition(VAdd(VGet(100,500,0), VGet(0, 0, 0)));
 
 	Drwawer draw;
 
-	Object* A = new Object();
-	Object* B = new Object();
-	A->Addchild(B);
-	B->SetPos(Vector3D(100,0,0));
+	double blend = 0;
+	double theta = 0;
+
+	Object* A1 = new Object();
+	Object* A2 = new Object();
+	Object* B1 = new Object();
+	Object* B2 = new Object();
+	Object* C1 = new Object();
+	Object* C2 = new Object();
+	A1->Addchild(A2);
+	A2->SetPos(Vector3D(-100, 0, 0));
+	B1->Addchild(B2);
+	B2->SetPos(Vector3D(-100, 0, 0));
+	C1->Addchild(C2);
+	C2->SetPos(Vector3D(-100, 0, 0));
+	Calculator calc;
+	B1->Rotate(Vector3D(0, 0, 1), calc.Radians(120));
 
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0)
 	{
-		Vector3D aPos = A->GetPos();
-		Vector3D bPos = B->GetPos();
-		SetCameraPositionAndTargetAndUpVec(VGet(0, 0, -300), VGet(aPos.x, aPos.y, aPos.z), VGet(0, 1, 0));
-		Calculator calc;
-		A->Rotate(Vector3D(0,0,1), calc.Radians(1));
+		if (CheckHitKey(KEY_INPUT_W) == 0) {
+			theta += calc.Radians(1);
+		}
+		if (CheckHitKey(KEY_INPUT_S) == 0) {
+			theta -= calc.Radians(1);
+		}
+		Vector3D a1Pos = A1->GetPos();
+		Vector3D a2Pos = A2->GetPos();
+		Vector3D b2Pos = B2->GetPos();
+		Vector3D c2Pos = C2->GetPos();
+		SetCameraPositionAndTargetAndUpVec(VGet(sin(theta) * -300, 0, cos(theta) * -300), VGet(0, 0, 0), VGet(0, 1, 0));
+		C1->Slerp(A1, B1, blend);
 
-		draw.Sphere(aPos, Drwawer::COLOR::WHITE);
-		draw.Sphere(bPos, Drwawer::COLOR::WHITE);
+		draw.Sphere(a1Pos, Drwawer::COLOR::WHITE);
+		draw.Sphere(a2Pos, Drwawer::COLOR::BLUE);
+		draw.Sphere(b2Pos, Drwawer::COLOR::RED);
+		draw.Sphere(c2Pos, Drwawer::COLOR::GREEN);
 		unsigned int color = GetColor(255,255,255);
-		draw.Line(aPos, bPos, color );
+		draw.Line(a1Pos, a2Pos, color);
+		draw.Line(a1Pos, b2Pos, color);
+		draw.Line(a1Pos, c2Pos, color);
+		blend += 0.01;
+		if (blend >= 1) blend = 0;
 		fps();
 		wait();
 	}

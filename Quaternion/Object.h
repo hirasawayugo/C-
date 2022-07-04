@@ -15,6 +15,7 @@ public:
 	void SetPos(Vector3D vec);
 	Vector3D GetPos();
 	void Rotate( Vector3D axis, double theta);
+	void Slerp(Object* o1, Object* o2, double blend);
 protected:
 	Vector3D pos;
 	Quaternion quat;

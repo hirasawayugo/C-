@@ -38,3 +38,8 @@ void Object::Rotate(Vector3D axis, double theta)
 	rQuat.createQuaternion(axis, theta);
 	quat = quat.multiply(rQuat);
 }
+
+void Object::Slerp(Object* o1, Object* o2, double blend)
+{
+	quat = o1->quat.Slerp(o2->quat, blend);
+}
