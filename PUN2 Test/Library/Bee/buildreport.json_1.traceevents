@@ -1,0 +1,592 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1657876478097339, "dur": 242576, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876478098930, "dur": 35056, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876478134262, "dur": 195870, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876478330153, "dur": 9762, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876483784529, "dur": 2511174, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876483784836, "dur": 3850, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876483788689, "dur": 32725, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876483821455, "dur": 587997, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876484409454, "dur": 1872509, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876486281965, "dur": 13737, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876486296396, "dur": 23, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1657876483940476, "dur": 448736, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657876483941888, "dur": 58232, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657876484367442, "dur": 6313, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657876484373759, "dur": 15444, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657876484374674, "dur": 13277, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657876484394887, "dur": 1523, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657876484393950, "dur": 2490, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876486296541, "dur": 228, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1657876484460136, "dur":1948, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876484462094, "dur":89, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1657876484462218, "dur":22, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1657876484462242, "dur":344, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1657876484462626, "dur":964, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876484463590, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275762, "dur":131, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275893, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275909, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275912, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275920, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275922, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275929, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275932, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275939, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486275960, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486276073, "dur":2427, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1657876484463145, "dur":470, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484463619, "dur":6496, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484470143, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1657876484470144, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484470200, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1657876484470205, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484470914, "dur":2329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1657876484473244, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1657876484473300, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484473306, "dur":1021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1657876484474369, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1657876484474415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484474423, "dur":715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1657876484475182, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1657876484475231, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484475238, "dur":2154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1657876484477435, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1657876484477485, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484477560, "dur":1097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1657876484478710, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1657876484478761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484478767, "dur":8932, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1657876484487743, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484487791, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484487796, "dur":231851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484719691, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484719737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484719745, "dur":30455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484750239, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484750295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484750303, "dur":44400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484794745, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484794787, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484794795, "dur":26705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484821539, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484821578, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484821585, "dur":88347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484909974, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484910017, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484910024, "dur":63174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484973428, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876484973482, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876484973490, "dur":40578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485014108, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485014150, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485014157, "dur":31983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485046179, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485046219, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485046226, "dur":17274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485063539, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485063579, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485063586, "dur":16835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485080459, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485080503, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485080510, "dur":16518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485097071, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485097112, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485097119, "dur":27722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485124885, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485124929, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485124937, "dur":21608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485146584, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485146631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485146638, "dur":17880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485164559, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485164598, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485164606, "dur":24490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485189135, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485189175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485189182, "dur":26484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485215706, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485215750, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485215758, "dur":42482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485258279, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485258319, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485258325, "dur":34817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485293187, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485293280, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485293288, "dur":91864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485385191, "dur":12865, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876485398061, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485398069, "dur":1220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876485399332, "dur":73589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485472925, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485472934, "dur":4314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485477291, "dur":26456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Networking.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876485503752, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485503760, "dur":3252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Networking.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876485507057, "dur":4231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485511293, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485511302, "dur":1634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485512976, "dur":766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485513746, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485513753, "dur":710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485514500, "dur":21781, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485536286, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485536295, "dur":6563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485542901, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485542942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485542949, "dur":186320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485729309, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485729372, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485729379, "dur":23476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485752894, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485752933, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485752993, "dur":137440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485890472, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485890516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485890524, "dur":77360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876485967925, "dur":5393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876485973330, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876485973339, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876485974304, "dur":45848, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876486020157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486020166, "dur":1766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876486021970, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Newtonsoft.Json.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876486022011, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486022017, "dur":5396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Newtonsoft.Json.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1657876486027454, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876486027493, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486027500, "dur":78763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1657876486106304, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1657876486106428, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486106474, "dur":1283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1657876486107795, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1657876486107834, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486107840, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1657876486109002, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1657876486109042, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486109048, "dur":5752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1657876486114843, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1657876486114886, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486114893, "dur":4571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1657876486119508, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1657876486119629, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486119636, "dur":801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1657876486120474, "dur":878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1657876486121356, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486121362, "dur":784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1657876486122185, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1657876486122225, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486122230, "dur":721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1657876486122987, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1657876486123024, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486123029, "dur":765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1657876486123835, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1657876486123874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486123879, "dur":864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1657876486124780, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1657876486124818, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486124824, "dur":769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1657876486125629, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1657876486125736, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1657876486125741, "dur":701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1657876486126476, "dur":149272, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484463197, "dur":427, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484463624, "dur":6520, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484470145, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1657876484470226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484479498, "dur":681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1657876484480222, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1657876484480264, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484480270, "dur":841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1657876484481158, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1657876484481205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484481212, "dur":2083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1657876484483348, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484483396, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484483449, "dur":98540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484583592, "dur":2666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484586264, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484586352, "dur":133867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484720260, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484720304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484720310, "dur":35753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484756102, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484756151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484756178, "dur":75147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484831364, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484831407, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876484831414, "dur":44934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876484876385, "dur":159122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485035511, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485035519, "dur":15095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485051586, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485051655, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485051663, "dur":37828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485089532, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485089580, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485089588, "dur":51347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485140977, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485141018, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485141044, "dur":95719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485236803, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485236856, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485236863, "dur":20598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485257532, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485257591, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485257597, "dur":36867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485294503, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485294543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485294550, "dur":30137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485324727, "dur":4894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485329627, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485329635, "dur":872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485330543, "dur":32703, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485363249, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485363257, "dur":841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485364136, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485364179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485364186, "dur":43301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485407528, "dur":6482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485414015, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485414024, "dur":1095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485415159, "dur":5223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Threading.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485420387, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485420396, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Threading.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485421473, "dur":794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485422271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485422278, "dur":721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485423035, "dur":4816, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Telemetry.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485427856, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485427865, "dur":1121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Telemetry.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485429024, "dur":34164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485463194, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485463202, "dur":990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485464228, "dur":7590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Registration.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485471824, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485471833, "dur":1323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Registration.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485473198, "dur":25440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485498643, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485498652, "dur":801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485499491, "dur":5744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485505239, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485505247, "dur":958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485506257, "dur":6473, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.Internal.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485512735, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485512742, "dur":2307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Environments.Internal.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485515085, "dur":5625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Device.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485520715, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485520724, "dur":3901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Device.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485524663, "dur":734, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485525401, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485525460, "dur":699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485526194, "dur":21104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485547368, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485547377, "dur":869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485548292, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485548336, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485548342, "dur":41203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485589585, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485589625, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485589632, "dur":111505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485701184, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485701224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485701231, "dur":59600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485760871, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485760909, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485760916, "dur":130547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485891503, "dur":5579, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485897087, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485897161, "dur":919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485898117, "dur":86219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485984341, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485984350, "dur":1049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485985442, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Photon3Unity3D.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485985484, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485985490, "dur":8592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Photon3Unity3D.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876485994123, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876485994161, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876485994168, "dur":95642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876486089850, "dur":4503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876486094358, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876486094366, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1657876486095320, "dur":65740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876486161065, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1657876486161075, "dur":1003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1657876486162116, "dur":113631, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484463328, "dur":304, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484463633, "dur":6503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484470142, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1657876484470224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484479133, "dur":2978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1657876484482161, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1657876484482205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484482211, "dur":750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1657876484483007, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1657876484483047, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484483053, "dur":1187, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1657876484484284, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484484328, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484484333, "dur":5339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484489721, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1657876484489775, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484489782, "dur":2818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1657876484492646, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test.exe" }}
+,{ "pid":12345, "tid":3, "ts":1657876484492689, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484492695, "dur":5879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test.exe" }}
+,{ "pid":12345, "tid":3, "ts":1657876484498621, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1657876484498674, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484498718, "dur":16441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1657876484515224, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484515276, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484515283, "dur":105504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484620839, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484620891, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484620899, "dur":99379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484720317, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484720363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484720368, "dur":47727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484768138, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484768182, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484768190, "dur":21712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484790039, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484790090, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484790098, "dur":17455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484807593, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484807631, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484807638, "dur":65729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484873406, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484873449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484873474, "dur":100449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484973961, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484974008, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484974014, "dur":17363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484991425, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876484991469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876484991477, "dur":39159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485030675, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485030735, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485030742, "dur":16572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485047352, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485047393, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485047400, "dur":30890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485078333, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485078378, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485078397, "dur":46547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485124983, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485125023, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485125028, "dur":20494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485145561, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485145606, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485145614, "dur":35590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485181246, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485181287, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485181295, "dur":53674, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485235144, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485235218, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485235226, "dur":22241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485257511, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485257552, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485257560, "dur":18767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485276366, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485276408, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485276415, "dur":16721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485293186, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485293321, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485293327, "dur":39689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485333065, "dur":5889, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1657876485338959, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485338990, "dur":995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1657876485340022, "dur":70358, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485410404, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485410413, "dur":1081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485411534, "dur":161810, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485573349, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485573357, "dur":1104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485574498, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485574540, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485574545, "dur":65335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485639922, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485639966, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485639973, "dur":64589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485704602, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485704653, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485704661, "dur":30482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485735183, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485735225, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485735232, "dur":120131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485855405, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485855445, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485855452, "dur":77280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876485932782, "dur":4763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1657876485937550, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485937559, "dur":981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1657876485938576, "dur":4648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1657876485943229, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876485943238, "dur":853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1657876485944130, "dur":83640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876486027773, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876486027806, "dur":1102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876486028950, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876486028991, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876486028997, "dur":30804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876486059847, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876486059887, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1657876486059895, "dur":215795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1657876486275731, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":3, "ts":1657876486275733, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484463423, "dur":213, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484463636, "dur":6502, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484470142, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1657876484470216, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484471511, "dur":1570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1657876484473127, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1657876484473171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484473179, "dur":1502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1657876484474726, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1657876484474770, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484474870, "dur":705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1657876484475625, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1657876484475666, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484475672, "dur":806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1657876484476522, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1657876484476570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484476576, "dur":800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1657876484477419, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1657876484477463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484477470, "dur":734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1657876484478249, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1657876484478318, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484478324, "dur":8626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1657876484487014, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484487063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484487069, "dur":14048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484501163, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484501214, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484501255, "dur":219061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484720355, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484720394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484720399, "dur":16644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484737112, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484737171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484737179, "dur":26623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484763846, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484763886, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484763893, "dur":18396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484782338, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484782381, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484782388, "dur":18274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484800707, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484800755, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484800763, "dur":39546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484840352, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484840398, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484840405, "dur":35225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484875670, "dur":5233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876484880908, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484880917, "dur":807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876484881761, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484881800, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484881806, "dur":18027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484899876, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484899915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484899922, "dur":32192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484932154, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876484932197, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876484932205, "dur":68847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485001094, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485001136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485001144, "dur":32020, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485033203, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485033243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485033251, "dur":24450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485057740, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485057787, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485057818, "dur":16743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485074607, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485074649, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485074657, "dur":31820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485106517, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485106563, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485106570, "dur":31553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485138167, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485138208, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485138216, "dur":29463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485167719, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485167762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485167769, "dur":16652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485184464, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485184511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485184519, "dur":19216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485203775, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485203835, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485203843, "dur":21254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485225139, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485225179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485225187, "dur":89871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485315098, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485315142, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485315150, "dur":36980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485352171, "dur":7733, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485359909, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485359919, "dur":3082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485363044, "dur":73330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485436379, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485436388, "dur":9905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485446334, "dur":5503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Scheduler.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485451842, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485451851, "dur":868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Scheduler.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485452756, "dur":20991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485473750, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485473757, "dur":851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485474645, "dur":5479, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485480129, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485480161, "dur":870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485481069, "dur":690, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485481762, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485481769, "dur":759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485482564, "dur":4612, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Internal.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485487181, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485487190, "dur":1064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Internal.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485488297, "dur":36179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485524481, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485524490, "dur":879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485525405, "dur":5311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Configuration.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485530721, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485530730, "dur":808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Configuration.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485531576, "dur":5470, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Analytics.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485537049, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485537057, "dur":850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Analytics.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1657876485537944, "dur":703, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485538650, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485538657, "dur":709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485539403, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485539443, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485539449, "dur":76767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485616260, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485616302, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485616310, "dur":110873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485727225, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485727268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485727276, "dur":69729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485797045, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485797086, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485797094, "dur":32608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485829741, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485829781, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876485829788, "dur":108223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876485938205, "dur":127358, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876486065568, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876486065578, "dur":1432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876486067050, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876486067090, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1657876486067097, "dur":160393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/hirasawa.yugo/Desktop/PUN2 Test /PUN2 Test_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1657876486227528, "dur":48218, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1657876486280532, "dur":2171, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1657876486296832, "dur": 704, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657876486296385, "dur": 1172, "ph": "X", "name": "Write chrome-trace events", "args": {} },
